@@ -26,7 +26,23 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
+@IBDesignable class MyButton: UIButton {
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        updateCornerRadius()
+    }
+    
+    @IBInspectable var rounded: Bool = false {
+        didSet {
+            updateCornerRadius()
+        }
+    }
+    
+    func updateCornerRadius() {
+        layer.cornerRadius = rounded ? 6 : 0
+        //frame.size.height / 2
+    }
+}
