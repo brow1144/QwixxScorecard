@@ -468,13 +468,13 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func yellow11Pushed(_ sender: Any) {
-        if (yellow10.backgroundColor == UIColor.black) {
-            yellow10.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
+        if (yellow11.backgroundColor == UIColor.black) {
+            yellow11.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
             yellowsSelected -= 1
             yellowTotal.text = createScore(number: yellowsSelected)
             finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         } else {
-            yellow10.backgroundColor = UIColor.black
+            yellow11.backgroundColor = UIColor.black
             yellowsSelected += 1
             yellowTotal.text = createScore(number: yellowsSelected)
             finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
