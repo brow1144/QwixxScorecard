@@ -37,11 +37,44 @@ class ViewController: UIViewController {
     @IBOutlet var yellow10: MyButton!
     @IBOutlet var yellow11: MyButton!
     @IBOutlet var yellow12: MyButton!
-    
     @IBOutlet var yellowLock: MyButton!
     
     var yellowsSelected = 0
     @IBOutlet var yellowTotal: UILabel!
+    
+    
+    @IBOutlet var green12: MyButton!
+    @IBOutlet var green11: MyButton!
+    @IBOutlet var green10: MyButton!
+    @IBOutlet var green9: MyButton!
+    @IBOutlet var green8: MyButton!
+    @IBOutlet var green7: MyButton!
+    @IBOutlet var green6: MyButton!
+    @IBOutlet var green5: MyButton!
+    @IBOutlet var green4: MyButton!
+    @IBOutlet var green3: MyButton!
+    @IBOutlet var green2: MyButton!
+    @IBOutlet var greenLock: MyButton!
+    
+    var greensSelected = 0
+    @IBOutlet var greenTotal: UILabel!
+    
+    
+    @IBOutlet var blue12: MyButton!
+    @IBOutlet var blue11: MyButton!
+    @IBOutlet var blue10: MyButton!
+    @IBOutlet var blue9: MyButton!
+    @IBOutlet var blue8: MyButton!
+    @IBOutlet var blue7: MyButton!
+    @IBOutlet var blue6: MyButton!
+    @IBOutlet var blue5: MyButton!
+    @IBOutlet var blue4: MyButton!
+    @IBOutlet var blue3: MyButton!
+    @IBOutlet var blue2: MyButton!
+    @IBOutlet var blueLock: MyButton!
+    
+    var bluesSelected = 0
+    @IBOutlet var blueTotal: UILabel!
     
     
     @IBOutlet var finalScore: UILabel!
@@ -88,10 +121,12 @@ class ViewController: UIViewController {
             red2.backgroundColor = UIColor(red: 255/255, green: 102/255, blue: 102/255, alpha: 1)
             redsSelected -= 1
             redTotal.text = createScore(number: redsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         } else {
             red2.backgroundColor = UIColor.black
             redsSelected += 1
             redTotal.text = createScore(number: redsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         }
     }
     @IBAction func red3Pushed(_ sender: Any) {
@@ -99,10 +134,12 @@ class ViewController: UIViewController {
             red3.backgroundColor = UIColor(red: 255/255, green: 102/255, blue: 102/255, alpha: 1)
             redsSelected -= 1
             redTotal.text = createScore(number: redsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         } else {
             red3.backgroundColor = UIColor.black
             redsSelected += 1
             redTotal.text = createScore(number: redsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         }
     }
     @IBAction func red4Pushed(_ sender: Any) {
@@ -110,10 +147,12 @@ class ViewController: UIViewController {
             red4.backgroundColor = UIColor(red: 255/255, green: 102/255, blue: 102/255, alpha: 1)
             redsSelected -= 1
             redTotal.text = createScore(number: redsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         } else {
             red4.backgroundColor = UIColor.black
             redsSelected += 1
             redTotal.text = createScore(number: redsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         }
     }
     @IBAction func red5Pushed(_ sender: Any) {
@@ -121,10 +160,12 @@ class ViewController: UIViewController {
             red5.backgroundColor = UIColor(red: 255/255, green: 102/255, blue: 102/255, alpha: 1)
             redsSelected -= 1
             redTotal.text = createScore(number: redsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         } else {
             red5.backgroundColor = UIColor.black
             redsSelected += 1
             redTotal.text = createScore(number: redsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         }
     }
     @IBAction func red6Pushed(_ sender: Any) {
@@ -132,10 +173,12 @@ class ViewController: UIViewController {
             red6.backgroundColor = UIColor(red: 255/255, green: 102/255, blue: 102/255, alpha: 1)
             redsSelected -= 1
             redTotal.text = createScore(number: redsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         } else {
             red6.backgroundColor = UIColor.black
             redsSelected += 1
             redTotal.text = createScore(number: redsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         }
     }
     @IBAction func red7Pushed(_ sender: Any) {
@@ -143,10 +186,12 @@ class ViewController: UIViewController {
             red7.backgroundColor = UIColor(red: 255/255, green: 102/255, blue: 102/255, alpha: 1)
             redsSelected -= 1
             redTotal.text = createScore(number: redsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         } else {
             red7.backgroundColor = UIColor.black
             redsSelected += 1
             redTotal.text = createScore(number: redsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         }
     }
     @IBAction func red8Pushed(_ sender: Any) {
@@ -154,10 +199,12 @@ class ViewController: UIViewController {
             red8.backgroundColor = UIColor(red: 255/255, green: 102/255, blue: 102/255, alpha: 1)
             redsSelected -= 1
             redTotal.text = createScore(number: redsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         } else {
             red8.backgroundColor = UIColor.black
             redsSelected += 1
             redTotal.text = createScore(number: redsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         }
     }
     @IBAction func red9Pushed(_ sender: Any) {
@@ -165,10 +212,12 @@ class ViewController: UIViewController {
             red9.backgroundColor = UIColor(red: 255/255, green: 102/255, blue: 102/255, alpha: 1)
             redsSelected -= 1
             redTotal.text = createScore(number: redsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         } else {
             red9.backgroundColor = UIColor.black
             redsSelected += 1
             redTotal.text = createScore(number: redsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         }
     }
     @IBAction func red10Pushed(_ sender: Any) {
@@ -176,10 +225,12 @@ class ViewController: UIViewController {
             red10.backgroundColor = UIColor(red: 255/255, green: 102/255, blue: 102/255, alpha: 1)
             redsSelected -= 1
             redTotal.text = createScore(number: redsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         } else {
             red10.backgroundColor = UIColor.black
             redsSelected += 1
             redTotal.text = createScore(number: redsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         }
     }
     @IBAction func red11Pushed(_ sender: Any) {
@@ -187,10 +238,12 @@ class ViewController: UIViewController {
             red11.backgroundColor = UIColor(red: 255/255, green: 102/255, blue: 102/255, alpha: 1)
             redsSelected -= 1
             redTotal.text = createScore(number: redsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         } else {
             red11.backgroundColor = UIColor.black
             redsSelected += 1
             redTotal.text = createScore(number: redsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         }
     }
     @IBAction func red12Pushed(_ sender: Any) {
@@ -199,11 +252,13 @@ class ViewController: UIViewController {
             redLock.backgroundColor = UIColor(red: 255/255, green: 102/255, blue: 102/255, alpha: 1)
             redsSelected -= 2
             redTotal.text = createScore(number: redsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         } else {
             red12.backgroundColor = UIColor.black
             redLock.backgroundColor = UIColor.black
             redsSelected += 2
             redTotal.text = createScore(number: redsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         }
     }
     
@@ -216,10 +271,12 @@ class ViewController: UIViewController {
             yellow2.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
             yellowsSelected -= 1
             yellowTotal.text = createScore(number: yellowsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         } else {
             yellow2.backgroundColor = UIColor.black
             yellowsSelected += 1
             yellowTotal.text = createScore(number: yellowsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         }
     }
     @IBAction func yellow3Pushed(_ sender: Any) {
@@ -227,10 +284,12 @@ class ViewController: UIViewController {
             yellow3.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
             yellowsSelected -= 1
             yellowTotal.text = createScore(number: yellowsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         } else {
             yellow3.backgroundColor = UIColor.black
             yellowsSelected += 1
             yellowTotal.text = createScore(number: yellowsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         }
     }
     @IBAction func yellow4Pushed(_ sender: Any) {
@@ -238,10 +297,12 @@ class ViewController: UIViewController {
             yellow4.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
             yellowsSelected -= 1
             yellowTotal.text = createScore(number: yellowsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         } else {
             yellow4.backgroundColor = UIColor.black
             yellowsSelected += 1
             yellowTotal.text = createScore(number: yellowsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         }
     }
     @IBAction func yellow5Pushed(_ sender: Any) {
@@ -249,10 +310,12 @@ class ViewController: UIViewController {
             yellow5.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
             yellowsSelected -= 1
             yellowTotal.text = createScore(number: yellowsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         } else {
             yellow5.backgroundColor = UIColor.black
             yellowsSelected += 1
             yellowTotal.text = createScore(number: yellowsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         }
     }
     @IBAction func yellow6Pushed(_ sender: Any) {
@@ -260,10 +323,12 @@ class ViewController: UIViewController {
             yellow6.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
             yellowsSelected -= 1
             yellowTotal.text = createScore(number: yellowsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         } else {
             yellow6.backgroundColor = UIColor.black
             yellowsSelected += 1
             yellowTotal.text = createScore(number: yellowsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         }
     }
     @IBAction func yellow7Pushed(_ sender: Any) {
@@ -271,10 +336,12 @@ class ViewController: UIViewController {
             yellow7.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
             yellowsSelected -= 1
             yellowTotal.text = createScore(number: yellowsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         } else {
             yellow7.backgroundColor = UIColor.black
             yellowsSelected += 1
             yellowTotal.text = createScore(number: yellowsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         }
     }
     @IBAction func yellow8Pushed(_ sender: Any) {
@@ -282,10 +349,12 @@ class ViewController: UIViewController {
             yellow8.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
             yellowsSelected -= 1
             yellowTotal.text = createScore(number: yellowsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         } else {
             yellow8.backgroundColor = UIColor.black
             yellowsSelected += 1
             yellowTotal.text = createScore(number: yellowsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         }
     }
     @IBAction func yelow9Pushed(_ sender: Any) {
@@ -293,10 +362,12 @@ class ViewController: UIViewController {
             yellow9.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
             yellowsSelected -= 1
             yellowTotal.text = createScore(number: yellowsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         } else {
             yellow9.backgroundColor = UIColor.black
             yellowsSelected += 1
             yellowTotal.text = createScore(number: yellowsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         }
     }
     @IBAction func yellow10Pushed(_ sender: Any) {
@@ -304,10 +375,12 @@ class ViewController: UIViewController {
             yellow10.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
             yellowsSelected -= 1
             yellowTotal.text = createScore(number: yellowsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         } else {
             yellow10.backgroundColor = UIColor.black
             yellowsSelected += 1
             yellowTotal.text = createScore(number: yellowsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         }
     }
     @IBAction func yellow11Pushed(_ sender: Any) {
@@ -315,10 +388,12 @@ class ViewController: UIViewController {
             yellow10.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
             yellowsSelected -= 1
             yellowTotal.text = createScore(number: yellowsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         } else {
             yellow10.backgroundColor = UIColor.black
             yellowsSelected += 1
             yellowTotal.text = createScore(number: yellowsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         }
     }
     @IBAction func yellow12Pushed(_ sender: Any) {
@@ -327,16 +402,315 @@ class ViewController: UIViewController {
             yellowLock.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
             yellowsSelected -= 2
             yellowTotal.text = createScore(number: yellowsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         } else {
             yellow12.backgroundColor = UIColor.black
             yellowLock.backgroundColor = UIColor.black
             yellowsSelected += 2
             yellowTotal.text = createScore(number: yellowsSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        }
+        
+    }
+    
+    
+    
+    
+    @IBAction func green12Pushed(_ sender: Any) {
+        if (green12.backgroundColor == UIColor.black) {
+            green12.backgroundColor = UIColor(red: 102/255, green: 204/255, blue: 153/255, alpha: 1)
+            greensSelected -= 1
+            greenTotal.text = createScore(number: greensSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        } else {
+            green12.backgroundColor = UIColor.black
+            greensSelected += 1
+            greenTotal.text = createScore(number: greensSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        }
+    }
+    @IBAction func green11Pushed(_ sender: Any) {
+        if (green11.backgroundColor == UIColor.black) {
+            green11.backgroundColor = UIColor(red: 102/255, green: 204/255, blue: 153/255, alpha: 1)
+            greensSelected -= 1
+            greenTotal.text = createScore(number: greensSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        } else {
+            green11.backgroundColor = UIColor.black
+            greensSelected += 1
+            greenTotal.text = createScore(number: greensSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        }
+    }
+    @IBAction func green10Pushed(_ sender: Any) {
+        if (green10.backgroundColor == UIColor.black) {
+            green10.backgroundColor = UIColor(red: 102/255, green: 204/255, blue: 153/255, alpha: 1)
+            greensSelected -= 1
+            greenTotal.text = createScore(number: greensSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        } else {
+            green10.backgroundColor = UIColor.black
+            greensSelected += 1
+            greenTotal.text = createScore(number: greensSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        }
+    }
+    @IBAction func green9Pushed(_ sender: Any) {
+        if (green9.backgroundColor == UIColor.black) {
+            green9.backgroundColor = UIColor(red: 102/255, green: 204/255, blue: 153/255, alpha: 1)
+            greensSelected -= 1
+            greenTotal.text = createScore(number: greensSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        } else {
+            green9.backgroundColor = UIColor.black
+            greensSelected += 1
+            greenTotal.text = createScore(number: greensSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        }
+    }
+    @IBAction func green8Pushed(_ sender: Any) {
+        if (green8.backgroundColor == UIColor.black) {
+            green8.backgroundColor = UIColor(red: 102/255, green: 204/255, blue: 153/255, alpha: 1)
+            greensSelected -= 1
+            greenTotal.text = createScore(number: greensSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        } else {
+            green8.backgroundColor = UIColor.black
+            greensSelected += 1
+            greenTotal.text = createScore(number: greensSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        }
+    }
+    @IBAction func green7Pushed(_ sender: Any) {
+        if (green7.backgroundColor == UIColor.black) {
+            green7.backgroundColor = UIColor(red: 102/255, green: 204/255, blue: 153/255, alpha: 1)
+            greensSelected -= 1
+            greenTotal.text = createScore(number: greensSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        } else {
+            green7.backgroundColor = UIColor.black
+            greensSelected += 1
+            greenTotal.text = createScore(number: greensSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        }
+    }
+    @IBAction func green6Pushed(_ sender: Any) {
+        if (green6.backgroundColor == UIColor.black) {
+            green6.backgroundColor = UIColor(red: 102/255, green: 204/255, blue: 153/255, alpha: 1)
+            greensSelected -= 1
+            greenTotal.text = createScore(number: greensSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        } else {
+            green6.backgroundColor = UIColor.black
+            greensSelected += 1
+            greenTotal.text = createScore(number: greensSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        }
+    }
+    @IBAction func green5Pushed(_ sender: Any) {
+        if (green5.backgroundColor == UIColor.black) {
+            green5.backgroundColor = UIColor(red: 102/255, green: 204/255, blue: 153/255, alpha: 1)
+            greensSelected -= 1
+            greenTotal.text = createScore(number: greensSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        } else {
+            green5.backgroundColor = UIColor.black
+            greensSelected += 1
+            greenTotal.text = createScore(number: greensSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        }
+    }
+    @IBAction func green4Pushed(_ sender: Any) {
+        if (green4.backgroundColor == UIColor.black) {
+            green4.backgroundColor = UIColor(red: 102/255, green: 204/255, blue: 153/255, alpha: 1)
+            greensSelected -= 1
+            greenTotal.text = createScore(number: greensSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        } else {
+            green4.backgroundColor = UIColor.black
+            greensSelected += 1
+            greenTotal.text = createScore(number: greensSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        }
+    }
+    @IBAction func green3Pushed(_ sender: Any) {
+        if (green3.backgroundColor == UIColor.black) {
+            green3.backgroundColor = UIColor(red: 102/255, green: 204/255, blue: 153/255, alpha: 1)
+            greensSelected -= 1
+            greenTotal.text = createScore(number: greensSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        } else {
+            green3.backgroundColor = UIColor.black
+            greensSelected += 1
+            greenTotal.text = createScore(number: greensSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        }
+    }
+    @IBAction func green2Pushed(_ sender: Any) {
+        if (green2.backgroundColor == UIColor.black) {
+            green2.backgroundColor = UIColor(red: 102/255, green: 204/255, blue: 153/255, alpha: 1)
+            greenLock.backgroundColor = UIColor(red: 102/255, green: 204/255, blue: 153/255, alpha: 1)
+            greensSelected -= 2
+            greenTotal.text = createScore(number: greensSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        } else {
+            green2.backgroundColor = UIColor.black
+            greenLock.backgroundColor = UIColor.black
+            greensSelected += 2
+            greenTotal.text = createScore(number: greensSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         }
     }
     
     
     
+    @IBAction func blue12Pushed(_ sender: Any) {
+        if (blue12.backgroundColor == UIColor.black) {
+            blue12.backgroundColor = UIColor(red: 102/255, green: 102/255, blue: 255/255, alpha: 1)
+            bluesSelected -= 1
+            blueTotal.text = createScore(number: bluesSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        } else {
+            blue12.backgroundColor = UIColor.black
+            bluesSelected += 1
+            blueTotal.text = createScore(number: bluesSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        }
+    }
+    @IBAction func blue11Pushed(_ sender: Any) {
+        if (blue11.backgroundColor == UIColor.black) {
+            blue11.backgroundColor = UIColor(red: 102/255, green: 102/255, blue: 255/255, alpha: 1)
+            bluesSelected -= 1
+            blueTotal.text = createScore(number: bluesSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        } else {
+            blue11.backgroundColor = UIColor.black
+            bluesSelected += 1
+            blueTotal.text = createScore(number: bluesSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        }
+    }
+    @IBAction func blue10Pushed(_ sender: Any) {
+        if (blue10.backgroundColor == UIColor.black) {
+            blue10.backgroundColor = UIColor(red: 102/255, green: 102/255, blue: 255/255, alpha: 1)
+            bluesSelected -= 1
+            blueTotal.text = createScore(number: bluesSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        } else {
+            blue10.backgroundColor = UIColor.black
+            bluesSelected += 1
+            blueTotal.text = createScore(number: bluesSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        }
+        
+    }
+    @IBAction func blue9Pushed(_ sender: Any) {
+        if (blue9.backgroundColor == UIColor.black) {
+            blue9.backgroundColor = UIColor(red: 102/255, green: 102/255, blue: 255/255, alpha: 1)
+            bluesSelected -= 1
+            blueTotal.text = createScore(number: bluesSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        } else {
+            blue9.backgroundColor = UIColor.black
+            bluesSelected += 1
+            blueTotal.text = createScore(number: bluesSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        }
+    }
+    @IBAction func blue8Pushed(_ sender: Any) {
+        if (blue8.backgroundColor == UIColor.black) {
+            blue8.backgroundColor = UIColor(red: 102/255, green: 102/255, blue: 255/255, alpha: 1)
+            bluesSelected -= 1
+            blueTotal.text = createScore(number: bluesSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        } else {
+            blue8.backgroundColor = UIColor.black
+            bluesSelected += 1
+            blueTotal.text = createScore(number: bluesSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        }
+    }
+    @IBAction func blue7Pushed(_ sender: Any) {
+        if (blue7.backgroundColor == UIColor.black) {
+            blue7.backgroundColor = UIColor(red: 102/255, green: 102/255, blue: 255/255, alpha: 1)
+            bluesSelected -= 1
+            blueTotal.text = createScore(number: bluesSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        } else {
+            blue7.backgroundColor = UIColor.black
+            bluesSelected += 1
+            blueTotal.text = createScore(number: bluesSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        }
+    }
+    @IBAction func blue6Pushed(_ sender: Any) {
+        if (blue6.backgroundColor == UIColor.black) {
+            blue6.backgroundColor = UIColor(red: 102/255, green: 102/255, blue: 255/255, alpha: 1)
+            bluesSelected -= 1
+            blueTotal.text = createScore(number: bluesSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        } else {
+            blue6.backgroundColor = UIColor.black
+            bluesSelected += 1
+            blueTotal.text = createScore(number: bluesSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        }
+    }
+    @IBAction func blue5Pushed(_ sender: Any) {
+        if (blue5.backgroundColor == UIColor.black) {
+            blue5.backgroundColor = UIColor(red: 102/255, green: 102/255, blue: 255/255, alpha: 1)
+            bluesSelected -= 1
+            blueTotal.text = createScore(number: bluesSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        } else {
+            blue5.backgroundColor = UIColor.black
+            bluesSelected += 1
+            blueTotal.text = createScore(number: bluesSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        }
+    }
+    @IBAction func blue4Pushed(_ sender: Any) {
+        if (blue4.backgroundColor == UIColor.black) {
+            blue4.backgroundColor = UIColor(red: 102/255, green: 102/255, blue: 255/255, alpha: 1)
+            bluesSelected -= 1
+            blueTotal.text = createScore(number: bluesSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        } else {
+            blue4.backgroundColor = UIColor.black
+            bluesSelected += 1
+            blueTotal.text = createScore(number: bluesSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        }
+    }
+    @IBAction func blue3Pushed(_ sender: Any) {
+        if (blue3.backgroundColor == UIColor.black) {
+            blue3.backgroundColor = UIColor(red: 102/255, green: 102/255, blue: 255/255, alpha: 1)
+            bluesSelected -= 1
+            blueTotal.text = createScore(number: bluesSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        } else {
+            blue3.backgroundColor = UIColor.black
+            bluesSelected += 1
+            blueTotal.text = createScore(number: bluesSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        }
+    }
+    @IBAction func blue2Pushed(_ sender: Any) {
+        if (blue2.backgroundColor == UIColor.black) {
+            blue2.backgroundColor = UIColor(red: 102/255, green: 102/255, blue: 255/255, alpha: 1)
+            blueLock.backgroundColor = UIColor(red: 102/255, green: 102/255, blue: 255/255, alpha: 1)
+            bluesSelected -= 2
+            blueTotal.text = createScore(number: bluesSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        } else {
+            blue2.backgroundColor = UIColor.black
+            blueLock.backgroundColor = UIColor.black
+            bluesSelected += 2
+            blueTotal.text = createScore(number: bluesSelected)
+            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+        }
+    }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

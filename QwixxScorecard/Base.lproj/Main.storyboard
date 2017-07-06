@@ -57,7 +57,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KCV-PY-Stc"/>
+                                    <action selector="green12Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="19O-gI-sap"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISu-t2-Mfw" userLabel="Green11" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
@@ -75,7 +75,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="43E-hp-OFN"/>
+                                    <action selector="green11Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nii-5I-cZ7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXE-zW-3DO" userLabel="Green10" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
@@ -92,7 +92,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xfw-Nm-6zt"/>
+                                    <action selector="green10Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qX7-Yx-v3t"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NbK-lh-Knq" userLabel="Green9" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
@@ -109,7 +109,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TJU-iO-Pbb"/>
+                                    <action selector="green9Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pU4-ke-VLN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQj-JT-rxH" userLabel="Green8" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
@@ -126,7 +126,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Lc-1Z-zRx"/>
+                                    <action selector="green8Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rEd-Nf-d7K"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcq-Jc-6d8" userLabel="Green7" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
@@ -143,7 +143,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b4a-eY-vkB"/>
+                                    <action selector="green7Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mVx-qZ-YtW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nsr-vS-irm" userLabel="Green6" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
@@ -160,7 +160,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mGA-r4-4hB"/>
+                                    <action selector="green6Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jjc-hQ-zAD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAJ-bg-1tu" userLabel="Green5" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
@@ -177,7 +177,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Gc-al-FFz"/>
+                                    <action selector="green5Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qp2-Tp-JKP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBg-ag-wlC" userLabel="Green4" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
@@ -194,7 +194,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jiR-Sh-Xmu"/>
+                                    <action selector="green4Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p5U-xs-4mT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jhe-LA-ruv" userLabel="Green3" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
@@ -211,7 +211,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UWm-O2-Iki"/>
+                                    <action selector="green3Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NuI-jJ-ro8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cus-4T-eRV" userLabel="Green2" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
@@ -228,7 +228,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ccc-Mw-nCx"/>
+                                    <action selector="green2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZlY-Vr-zPM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVl-EO-ZA0" userLabel="GreenLock" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
@@ -244,9 +244,6 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ck-4b-023"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbl-80-HDe" userLabel="BlueBackground">
                                 <rect key="frame" x="10" y="196" width="548" height="48"/>
@@ -270,7 +267,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wI1-wS-Fxq"/>
+                                    <action selector="blue12Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aaE-7T-qVo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOO-Uq-0X3" userLabel="Blue11" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
@@ -288,7 +285,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aK2-Gf-9eu"/>
+                                    <action selector="blue11Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ayO-Z0-s0b"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5A-ZX-7Kf" userLabel="Blue10" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
@@ -305,7 +302,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nCh-xO-Vb4"/>
+                                    <action selector="blue10Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4HE-vF-KRM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGQ-iG-r27" userLabel="Blue9" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
@@ -322,7 +319,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eeM-uA-2fo"/>
+                                    <action selector="blue9Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jkV-KZ-tnb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbT-Jx-h6w" userLabel="Blue8" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
@@ -339,7 +336,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="br6-6F-fsb"/>
+                                    <action selector="blue8Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y31-cZ-Gwn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Mp-6U-lOO" userLabel="Blue7" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
@@ -356,7 +353,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c9d-xO-5Vz"/>
+                                    <action selector="blue7Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xB5-Bp-JcG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDf-oG-31U" userLabel="Blue6" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
@@ -373,7 +370,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nUX-3Q-kMQ"/>
+                                    <action selector="blue6Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T9m-qN-M48"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHx-JT-Doj" userLabel="Blue5" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
@@ -390,7 +387,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ty7-oQ-7PO"/>
+                                    <action selector="blue5Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GVX-xR-hxz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSU-pO-kV3" userLabel="Blue4" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
@@ -407,7 +404,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SLb-Xf-B7a"/>
+                                    <action selector="blue4Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HpX-4l-8kp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHl-x3-OM1" userLabel="Blue3" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
@@ -424,7 +421,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ucR-hr-CI9"/>
+                                    <action selector="blue3Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iOd-dn-2DW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8l7-Gz-wm5" userLabel="Blue2" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
@@ -441,7 +438,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KhG-yg-53Q"/>
+                                    <action selector="blue2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FyS-Qc-kTf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gij-yx-E2H" userLabel="BlueLock" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
@@ -457,9 +454,6 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N5a-kn-KBW"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lhh-Wy-Ng0" userLabel="YellowBackground">
                                 <rect key="frame" x="10" y="84" width="548" height="48"/>
@@ -998,7 +992,7 @@
                                     <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QR7-t7-hpR"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F66-aj-CUR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F66-aj-CUR">
                                 <rect key="frame" x="482" y="286" width="72" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1104,7 +1098,33 @@
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
+                        <outlet property="blue10" destination="H5A-ZX-7Kf" id="Z9a-6t-4R8"/>
+                        <outlet property="blue11" destination="BOO-Uq-0X3" id="ahr-7I-ivg"/>
+                        <outlet property="blue12" destination="EdW-MP-WwS" id="IQt-98-1dv"/>
+                        <outlet property="blue2" destination="8l7-Gz-wm5" id="fYk-6F-KiF"/>
+                        <outlet property="blue3" destination="AHl-x3-OM1" id="029-PP-EJt"/>
+                        <outlet property="blue4" destination="MSU-pO-kV3" id="eaD-xY-0wq"/>
+                        <outlet property="blue5" destination="NHx-JT-Doj" id="CQ5-9A-ab7"/>
+                        <outlet property="blue6" destination="ZDf-oG-31U" id="nq1-VD-5Hw"/>
+                        <outlet property="blue7" destination="4Mp-6U-lOO" id="R6q-dP-5ud"/>
+                        <outlet property="blue8" destination="KbT-Jx-h6w" id="JM0-UX-nsG"/>
+                        <outlet property="blue9" destination="EGQ-iG-r27" id="A3A-BD-a16"/>
+                        <outlet property="blueLock" destination="Gij-yx-E2H" id="Dnv-s2-so9"/>
+                        <outlet property="blueTotal" destination="5Th-hK-AEB" id="Rad-Wz-LOj"/>
                         <outlet property="finalScore" destination="F66-aj-CUR" id="BIR-sj-4rP"/>
+                        <outlet property="green10" destination="VXE-zW-3DO" id="vQA-DX-Gfw"/>
+                        <outlet property="green11" destination="ISu-t2-Mfw" id="8Cc-tO-SSw"/>
+                        <outlet property="green12" destination="Bzz-KL-gm9" id="uQj-UI-Yiy"/>
+                        <outlet property="green2" destination="cus-4T-eRV" id="EgB-Dk-Qo9"/>
+                        <outlet property="green3" destination="Jhe-LA-ruv" id="Xvj-4r-Tut"/>
+                        <outlet property="green4" destination="NBg-ag-wlC" id="grr-po-WTI"/>
+                        <outlet property="green5" destination="qAJ-bg-1tu" id="q45-md-mbc"/>
+                        <outlet property="green6" destination="Nsr-vS-irm" id="YBu-Oc-xtY"/>
+                        <outlet property="green7" destination="zcq-Jc-6d8" id="XFk-h4-1fh"/>
+                        <outlet property="green8" destination="mQj-JT-rxH" id="7uF-pP-S5E"/>
+                        <outlet property="green9" destination="NbK-lh-Knq" id="pI0-m1-fcZ"/>
+                        <outlet property="greenLock" destination="kVl-EO-ZA0" id="SDp-yM-IEU"/>
+                        <outlet property="greenTotal" destination="RLh-Ss-HDR" id="Cau-FF-mjg"/>
                         <outlet property="red10" destination="wVy-f4-3fd" id="fpT-vh-5UG"/>
                         <outlet property="red11" destination="Lu2-SJ-R5j" id="Ao3-Ts-V8a"/>
                         <outlet property="red12" destination="cxU-w2-6l6" id="GGt-YI-0ry"/>
