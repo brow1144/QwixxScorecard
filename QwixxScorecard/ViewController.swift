@@ -77,6 +77,20 @@ class ViewController: UIViewController {
     @IBOutlet var blueTotal: UILabel!
     
     
+    @IBOutlet var penality1: MyButton!
+    var penality1Bool: Bool = false
+    @IBOutlet var penality2: MyButton!
+    var penality2Bool: Bool = false
+    @IBOutlet var penality3: MyButton!
+    var penality3Bool: Bool = false
+    @IBOutlet var penality4: MyButton!
+    var penality4Bool: Bool = false
+    
+    
+    var totalPenality = 0
+    @IBOutlet var penalityScore: UILabel!
+    
+    
     @IBOutlet var finalScore: UILabel!
     
     
@@ -113,6 +127,76 @@ class ViewController: UIViewController {
             return "78"
         }
         return "0"
+    }
+    
+    @IBAction func penality1Pushed(_ sender: Any) {
+        if (penality1Bool) {
+            penality1.setTitle("",for: .normal)
+            totalPenality -= 5
+            penalityScore.text = String(describing: totalPenality)
+            penality1Bool = false
+            //finalScore.text = String(Int(finalScore.text!)! - totalPenality)
+            finalScore.text = String(Int(finalScore.text!)! + 5)
+        } else {
+            penality1.setTitle("X",for: .normal)
+            penality1.setTitleColor(UIColor.red, for: .normal)
+            totalPenality += 5
+            penalityScore.text = String(describing: totalPenality)
+            penality1Bool = true
+            finalScore.text = String(Int(finalScore.text!)! - 5)
+        }
+    }
+    
+    @IBAction func penality2Pushed(_ sender: Any) {
+        if (penality2Bool) {
+            penality2.setTitle("",for: .normal)
+            totalPenality -= 5
+            penalityScore.text = String(describing: totalPenality)
+            penality2Bool = false
+            //finalScore.text = String(Int(finalScore.text!)! - totalPenality)
+            finalScore.text = String(Int(finalScore.text!)! + 5)
+        } else {
+            penality2.setTitle("X",for: .normal)
+            penality2.setTitleColor(UIColor.red, for: .normal)
+            totalPenality += 5
+            penalityScore.text = String(describing: totalPenality)
+            penality2Bool = true
+            finalScore.text = String(Int(finalScore.text!)! - 5)
+        }
+    }
+    @IBAction func penality3Pushed(_ sender: Any) {
+        if (penality3Bool) {
+            penality3.setTitle("",for: .normal)
+            totalPenality -= 5
+            penalityScore.text = String(describing: totalPenality)
+            penality3Bool = false
+            //finalScore.text = String(Int(finalScore.text!)! - totalPenality)
+            finalScore.text = String(Int(finalScore.text!)! + 5)
+        } else {
+            penality3.setTitle("X",for: .normal)
+            penality3.setTitleColor(UIColor.red, for: .normal)
+            totalPenality += 5
+            penalityScore.text = String(describing: totalPenality)
+            penality3Bool = true
+            finalScore.text = String(Int(finalScore.text!)! - 5)
+        }
+    }
+    @IBAction func penality4Pushed(_ sender: Any) {
+        if (penality4Bool) {
+            penality4.setTitle("",for: .normal)
+            totalPenality -= 5
+            penalityScore.text = String(describing: totalPenality)
+            penality4Bool = false
+            //finalScore.text = String(Int(finalScore.text!)! - totalPenality)
+            finalScore.text = String(Int(finalScore.text!)! + 5)
+        } else {
+            penality4.setTitle("X",for: .normal)
+            penality4.setTitleColor(UIColor.red, for: .normal)
+            totalPenality += 5
+            penalityScore.text = String(describing: totalPenality)
+            penality4Bool = true
+            finalScore.text = String(Int(finalScore.text!)! - 5)
+        }
     }
 
     

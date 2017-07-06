@@ -1038,33 +1038,49 @@
                                 <rect key="frame" x="536" y="249" width="22" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title=" "/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="penality4Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="72N-71-L83"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MuL-w8-EDC" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
                                 <rect key="frame" x="507" y="249" width="22" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title=" "/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="penality3Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GdQ-iR-uIS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nv0-2s-deV" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
                                 <rect key="frame" x="477" y="249" width="22" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title=" "/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="penality2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IrS-wv-Zid"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lA8-z2-XBr" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
                                 <rect key="frame" x="447" y="249" width="22" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title=" "/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="penality1Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="otS-l0-U4c"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTx-Mk-p0X">
                                 <rect key="frame" x="73" y="286" width="42" height="21"/>
@@ -1089,6 +1105,13 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Th-hK-AEB">
                                 <rect key="frame" x="333" y="285" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAk-CB-bIb">
+                                <rect key="frame" x="418" y="285" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -1125,6 +1148,11 @@
                         <outlet property="green9" destination="NbK-lh-Knq" id="pI0-m1-fcZ"/>
                         <outlet property="greenLock" destination="kVl-EO-ZA0" id="SDp-yM-IEU"/>
                         <outlet property="greenTotal" destination="RLh-Ss-HDR" id="Cau-FF-mjg"/>
+                        <outlet property="penality1" destination="lA8-z2-XBr" id="OVj-hO-U4b"/>
+                        <outlet property="penality2" destination="nv0-2s-deV" id="S0O-HO-l48"/>
+                        <outlet property="penality3" destination="MuL-w8-EDC" id="S0S-LO-TIj"/>
+                        <outlet property="penality4" destination="Z6h-Fo-Rbt" id="dfH-1h-Qzp"/>
+                        <outlet property="penalityScore" destination="cAk-CB-bIb" id="efg-SS-y09"/>
                         <outlet property="red10" destination="wVy-f4-3fd" id="fpT-vh-5UG"/>
                         <outlet property="red11" destination="Lu2-SJ-R5j" id="Ao3-Ts-V8a"/>
                         <outlet property="red12" destination="cxU-w2-6l6" id="GGt-YI-0ry"/>
