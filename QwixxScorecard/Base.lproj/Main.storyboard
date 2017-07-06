@@ -679,7 +679,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nxz-QO-69b"/>
+                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SNZ-25-pKv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3G-Gh-Ngq" userLabel="Red3" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
@@ -697,7 +697,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4HS-JR-vCt"/>
+                                    <action selector="red3Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IOL-aY-mih"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krf-gt-LUB" userLabel="Red4" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
@@ -714,7 +714,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GVM-4X-X09"/>
+                                    <action selector="red4Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N9x-h8-PgN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4C-Jl-5qH" userLabel="Red5" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
@@ -731,7 +731,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ums-Md-e1d"/>
+                                    <action selector="red5Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EQe-e7-yMc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ss-Kk-fIU" userLabel="Red6" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
@@ -748,7 +748,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gN2-gZ-uEA"/>
+                                    <action selector="red6Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="onZ-MP-BBp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6g-qT-BL4" userLabel="Red7" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
@@ -765,7 +765,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q7Q-9a-OPl"/>
+                                    <action selector="red7Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GUi-Or-Esm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mtU-l8-ePU" userLabel="Red8" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
@@ -782,7 +782,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o9o-MW-BFq"/>
+                                    <action selector="red8Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ecj-hr-EIw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JpN-UU-oUw" userLabel="Red9" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
@@ -799,7 +799,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IJP-ch-51X"/>
+                                    <action selector="red9Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5aP-pQ-BFs"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVy-f4-3fd" userLabel="Red10" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
@@ -816,7 +816,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lyB-gd-qRq"/>
+                                    <action selector="red10Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rlI-HT-IFm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lu2-SJ-R5j" userLabel="Red11" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
@@ -833,7 +833,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dtr-3A-cL2"/>
+                                    <action selector="red11Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4u8-Cm-u1N"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxU-w2-6l6" userLabel="Red12" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
@@ -850,10 +850,10 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="knP-jJ-fM2"/>
+                                    <action selector="red12Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xWu-Ou-epg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Brq-gP-IUQ" userLabel="RedLock" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Brq-gP-IUQ" userLabel="RedLock" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
                                 <rect key="frame" x="507" y="34" width="41" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -866,9 +866,6 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="red2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ChI-GT-ls8"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEa-Hq-ZNk" userLabel="YellowLock" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
                                 <rect key="frame" x="508" y="89" width="41" height="35"/>
@@ -1078,12 +1075,52 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTx-Mk-p0X">
+                                <rect key="frame" x="73" y="286" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kr8-eD-AXD">
+                                <rect key="frame" x="160" y="286" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLh-Ss-HDR">
+                                <rect key="frame" x="247" y="286" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Th-hK-AEB">
+                                <rect key="frame" x="333" y="285" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="finalScore" destination="F66-aj-CUR" id="BIR-sj-4rP"/>
-                        <outlet property="red2" destination="u8P-an-g4h" id="Dmk-Cm-ZJo"/>
+                        <outlet property="red10" destination="wVy-f4-3fd" id="fpT-vh-5UG"/>
+                        <outlet property="red11" destination="Lu2-SJ-R5j" id="Ao3-Ts-V8a"/>
+                        <outlet property="red12" destination="cxU-w2-6l6" id="GGt-YI-0ry"/>
+                        <outlet property="red2" destination="u8P-an-g4h" id="urQ-nl-rxs"/>
+                        <outlet property="red3" destination="z3G-Gh-Ngq" id="Vde-Yp-lP0"/>
+                        <outlet property="red4" destination="krf-gt-LUB" id="v45-zs-Run"/>
+                        <outlet property="red5" destination="X4C-Jl-5qH" id="3HW-r4-8Rc"/>
+                        <outlet property="red6" destination="9ss-Kk-fIU" id="ypi-sU-qju"/>
+                        <outlet property="red7" destination="W6g-qT-BL4" id="dTX-R9-guo"/>
+                        <outlet property="red8" destination="mtU-l8-ePU" id="1ij-0P-FLV"/>
+                        <outlet property="red9" destination="JpN-UU-oUw" id="SGk-Fz-ue6"/>
+                        <outlet property="redLock" destination="Brq-gP-IUQ" id="elw-dA-c8e"/>
+                        <outlet property="redTotal" destination="bTx-Mk-p0X" id="JBR-2O-pxP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
