@@ -291,7 +291,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="penality1Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="otS-l0-U4c"/>
+                                            <action selector="handlePenality:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KaQ-UG-ArI"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EdW-MP-WwS" userLabel="Blue12" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
@@ -369,7 +369,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="penality4Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="72N-71-L83"/>
+                                            <action selector="handlePenality:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eUq-vc-NTs"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Te-je-M3h" userLabel="Yellow10" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
@@ -763,7 +763,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="penality3Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GdQ-iR-uIS"/>
+                                            <action selector="handlePenality:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qA0-oO-Rj7"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AYH-LQ-bju" userLabel="Yellow8" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
@@ -1038,7 +1038,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="penality2Pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IrS-wv-Zid"/>
+                                            <action selector="handlePenality:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lfh-GT-BdB"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAk-CB-bIb">
