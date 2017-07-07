@@ -104,6 +104,7 @@ class ViewController: UIViewController {
         red10.tag = 101
         red11.tag = 111
         red12.tag = 121
+        redLock.tag = 991
         
         yellow2.tag = 22
         yellow3.tag = 32
@@ -116,7 +117,8 @@ class ViewController: UIViewController {
         yellow10.tag = 102
         yellow11.tag = 112
         yellow12.tag = 122
-        
+        yellowLock.tag = 992
+
         green2.tag = 23
         green3.tag = 33
         green4.tag = 43
@@ -128,6 +130,7 @@ class ViewController: UIViewController {
         green10.tag = 103
         green11.tag = 113
         green12.tag = 123
+        greenLock.tag = 993
         
         blue2.tag = 24
         blue3.tag = 34
@@ -140,9 +143,10 @@ class ViewController: UIViewController {
         blue10.tag = 104
         blue11.tag = 114
         blue12.tag = 124
+        blueLock.tag = 994
     }
     
-    func createScore( number : Int?) -> String {
+    func createScore(number: Int?) -> String {
         let number = number
         if (number == 1) {
             return "1"
@@ -277,7 +281,6 @@ class ViewController: UIViewController {
             sender.setTitle("",for: .normal)
             totalPenality -= 5
             penalityScore.text = String(describing: totalPenality)
-            //penality1Bool = false
             sender.tag = 0
             finalScore.text = String(Int(finalScore.text!)! + 5)
         } else {
@@ -285,9 +288,101 @@ class ViewController: UIViewController {
             sender.setTitleColor(UIColor.red, for: .normal)
             totalPenality += 5
             penalityScore.text = String(describing: totalPenality)
-            //penality1Bool = true
             sender.tag = 1
             finalScore.text = String(Int(finalScore.text!)! - 5)
+        }
+    }
+    
+    func lockRed(boolean: Bool) {
+        red2.isEnabled = boolean
+        red3.isEnabled = boolean
+        red4.isEnabled = boolean
+        red5.isEnabled = boolean
+        red6.isEnabled = boolean
+        red7.isEnabled = boolean
+        red8.isEnabled = boolean
+        red9.isEnabled = boolean
+        red10.isEnabled = boolean
+        red11.isEnabled = boolean
+        red12.isEnabled = boolean
+    }
+    
+    func lockYellow(boolean: Bool) {
+        yellow2.isEnabled = boolean
+        yellow3.isEnabled = boolean
+        yellow4.isEnabled = boolean
+        yellow5.isEnabled = boolean
+        yellow6.isEnabled = boolean
+        yellow7.isEnabled = boolean
+        yellow8.isEnabled = boolean
+        yellow9.isEnabled = boolean
+        yellow10.isEnabled = boolean
+        yellow11.isEnabled = boolean
+        yellow12.isEnabled = boolean
+    }
+    
+    func lockGreen(boolean: Bool) {
+        green2.isEnabled = boolean
+        green3.isEnabled = boolean
+        green4.isEnabled = boolean
+        green5.isEnabled = boolean
+        green6.isEnabled = boolean
+        green7.isEnabled = boolean
+        green8.isEnabled = boolean
+        green9.isEnabled = boolean
+        green10.isEnabled = boolean
+        green11.isEnabled = boolean
+        green12.isEnabled = boolean
+    }
+    
+    func lockBlue(boolean: Bool) {
+        blue2.isEnabled = boolean
+        blue3.isEnabled = boolean
+        blue4.isEnabled = boolean
+        blue5.isEnabled = boolean
+        blue6.isEnabled = boolean
+        blue7.isEnabled = boolean
+        blue8.isEnabled = boolean
+        blue9.isEnabled = boolean
+        blue10.isEnabled = boolean
+        blue11.isEnabled = boolean
+        blue12.isEnabled = boolean
+    }
+    
+    @IBAction func handleLock(_ sender: MyButton) {
+        if (sender.tag % 10 == 1) {
+            if (red2.isEnabled) {
+                lockRed(boolean: false)
+                redLock.backgroundColor = UIColor.black
+            } else {
+                lockRed(boolean: true)
+                redLock.backgroundColor = UIColor(red: 255/255, green: 102/255, blue: 102/255, alpha: 1)
+            }
+        } else if (sender.tag % 10 == 2) {
+            if (yellow2.isEnabled) {
+                lockYellow(boolean: false)
+                yellowLock.backgroundColor = UIColor.black
+            } else {
+                lockYellow(boolean: true)
+                yellowLock.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
+            }
+        } else if (sender.tag % 10 == 3) {
+            if (green2.isEnabled) {
+                lockGreen(boolean: false)
+                greenLock.backgroundColor = UIColor.black
+                
+            } else {
+                lockGreen(boolean: true)
+                greenLock.backgroundColor = UIColor(red: 102/255, green: 204/255, blue: 153/255, alpha: 1)
+            }
+        } else if (sender.tag % 10 == 4) {
+            if (blue2.isEnabled) {
+                lockBlue(boolean: false)
+                blueLock.backgroundColor = UIColor.black
+            } else {
+                lockBlue(boolean: true)
+                blueLock.backgroundColor = UIColor(red: 102/255, green: 102/255, blue: 255/255, alpha: 1)
+            }
         }
     }
 }
