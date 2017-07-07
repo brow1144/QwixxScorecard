@@ -107,6 +107,19 @@ class ViewController: UIViewController {
         red10.tag = 101
         red11.tag = 111
         red12.tag = 121
+        
+        yellow2.tag = 22
+        yellow3.tag = 32
+        yellow4.tag = 42
+        yellow5.tag = 52
+        yellow6.tag = 62
+        yellow7.tag = 72
+        yellow8.tag = 82
+        yellow9.tag = 92
+        yellow10.tag = 102
+        yellow11.tag = 112
+        yellow12.tag = 122
+        
     }
     
     func createScore( number : Int?) -> String {
@@ -169,9 +182,41 @@ class ViewController: UIViewController {
         }
     }
     
+    func handleYellow(tag : Int?, button : MyButton) {
+        if (tag == 122) {
+            if (button.backgroundColor == UIColor.black) {
+                button.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
+                yellowLock.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
+                yellowsSelected -= 2
+                yellowTotal.text = createScore(number: yellowsSelected)
+                finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+            } else {
+                button.backgroundColor = UIColor.black
+                yellowLock.backgroundColor = UIColor.black
+                yellowsSelected += 2
+                yellowTotal.text = createScore(number: yellowsSelected)
+                finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+            }
+        } else {
+            if (button.backgroundColor == UIColor.black) {
+                button.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
+                yellowsSelected -= 1
+                yellowTotal.text = createScore(number: yellowsSelected)
+                finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+            } else {
+                button.backgroundColor = UIColor.black
+                yellowsSelected += 1
+                yellowTotal.text = createScore(number: yellowsSelected)
+                finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+            }
+        }
+    }
+    
     @IBAction func buttonPressed(_ sender: MyButton) {
         if (sender.tag % 10 == 1) {
             handleRed(tag: sender.tag, button: sender)
+        } else if (sender.tag % 10 == 2) {
+            handleYellow(tag: sender.tag, button: sender)
         }
     }
     
@@ -395,153 +440,153 @@ class ViewController: UIViewController {
     
     
     
-    @IBAction func yellow2Pushed(_ sender: Any) {
-        if (yellow2.backgroundColor == UIColor.black) {
-            yellow2.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
-            yellowsSelected -= 1
-            yellowTotal.text = createScore(number: yellowsSelected)
-            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
-        } else {
-            yellow2.backgroundColor = UIColor.black
-            yellowsSelected += 1
-            yellowTotal.text = createScore(number: yellowsSelected)
-            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
-        }
-    }
-    @IBAction func yellow3Pushed(_ sender: Any) {
-        if (yellow3.backgroundColor == UIColor.black) {
-            yellow3.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
-            yellowsSelected -= 1
-            yellowTotal.text = createScore(number: yellowsSelected)
-            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
-        } else {
-            yellow3.backgroundColor = UIColor.black
-            yellowsSelected += 1
-            yellowTotal.text = createScore(number: yellowsSelected)
-            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
-        }
-    }
-    @IBAction func yellow4Pushed(_ sender: Any) {
-        if (yellow4.backgroundColor == UIColor.black) {
-            yellow4.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
-            yellowsSelected -= 1
-            yellowTotal.text = createScore(number: yellowsSelected)
-            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
-        } else {
-            yellow4.backgroundColor = UIColor.black
-            yellowsSelected += 1
-            yellowTotal.text = createScore(number: yellowsSelected)
-            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
-        }
-    }
-    @IBAction func yellow5Pushed(_ sender: Any) {
-        if (yellow5.backgroundColor == UIColor.black) {
-            yellow5.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
-            yellowsSelected -= 1
-            yellowTotal.text = createScore(number: yellowsSelected)
-            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
-        } else {
-            yellow5.backgroundColor = UIColor.black
-            yellowsSelected += 1
-            yellowTotal.text = createScore(number: yellowsSelected)
-            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
-        }
-    }
-    @IBAction func yellow6Pushed(_ sender: Any) {
-        if (yellow6.backgroundColor == UIColor.black) {
-            yellow6.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
-            yellowsSelected -= 1
-            yellowTotal.text = createScore(number: yellowsSelected)
-            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
-        } else {
-            yellow6.backgroundColor = UIColor.black
-            yellowsSelected += 1
-            yellowTotal.text = createScore(number: yellowsSelected)
-            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
-        }
-    }
-    @IBAction func yellow7Pushed(_ sender: Any) {
-        if (yellow7.backgroundColor == UIColor.black) {
-            yellow7.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
-            yellowsSelected -= 1
-            yellowTotal.text = createScore(number: yellowsSelected)
-            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
-        } else {
-            yellow7.backgroundColor = UIColor.black
-            yellowsSelected += 1
-            yellowTotal.text = createScore(number: yellowsSelected)
-            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
-        }
-    }
-    @IBAction func yellow8Pushed(_ sender: Any) {
-        if (yellow8.backgroundColor == UIColor.black) {
-            yellow8.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
-            yellowsSelected -= 1
-            yellowTotal.text = createScore(number: yellowsSelected)
-            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
-        } else {
-            yellow8.backgroundColor = UIColor.black
-            yellowsSelected += 1
-            yellowTotal.text = createScore(number: yellowsSelected)
-            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
-        }
-    }
-    @IBAction func yelow9Pushed(_ sender: Any) {
-        if (yellow9.backgroundColor == UIColor.black) {
-            yellow9.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
-            yellowsSelected -= 1
-            yellowTotal.text = createScore(number: yellowsSelected)
-            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
-        } else {
-            yellow9.backgroundColor = UIColor.black
-            yellowsSelected += 1
-            yellowTotal.text = createScore(number: yellowsSelected)
-            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
-        }
-    }
-    @IBAction func yellow10Pushed(_ sender: Any) {
-        if (yellow10.backgroundColor == UIColor.black) {
-            yellow10.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
-            yellowsSelected -= 1
-            yellowTotal.text = createScore(number: yellowsSelected)
-            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
-        } else {
-            yellow10.backgroundColor = UIColor.black
-            yellowsSelected += 1
-            yellowTotal.text = createScore(number: yellowsSelected)
-            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
-        }
-    }
-    @IBAction func yellow11Pushed(_ sender: Any) {
-        if (yellow11.backgroundColor == UIColor.black) {
-            yellow11.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
-            yellowsSelected -= 1
-            yellowTotal.text = createScore(number: yellowsSelected)
-            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
-        } else {
-            yellow11.backgroundColor = UIColor.black
-            yellowsSelected += 1
-            yellowTotal.text = createScore(number: yellowsSelected)
-            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
-        }
-    }
-    @IBAction func yellow12Pushed(_ sender: Any) {
-        if (yellow12.backgroundColor == UIColor.black) {
-            yellow12.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
-            yellowLock.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
-            yellowsSelected -= 2
-            yellowTotal.text = createScore(number: yellowsSelected)
-            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
-        } else {
-            yellow12.backgroundColor = UIColor.black
-            yellowLock.backgroundColor = UIColor.black
-            yellowsSelected += 2
-            yellowTotal.text = createScore(number: yellowsSelected)
-            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
-        }
-        
-    }
-    
+//    @IBAction func yellow2Pushed(_ sender: Any) {
+//        if (yellow2.backgroundColor == UIColor.black) {
+//            yellow2.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
+//            yellowsSelected -= 1
+//            yellowTotal.text = createScore(number: yellowsSelected)
+//            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+//        } else {
+//            yellow2.backgroundColor = UIColor.black
+//            yellowsSelected += 1
+//            yellowTotal.text = createScore(number: yellowsSelected)
+//            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+//        }
+//    }
+//    @IBAction func yellow3Pushed(_ sender: Any) {
+//        if (yellow3.backgroundColor == UIColor.black) {
+//            yellow3.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
+//            yellowsSelected -= 1
+//            yellowTotal.text = createScore(number: yellowsSelected)
+//            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+//        } else {
+//            yellow3.backgroundColor = UIColor.black
+//            yellowsSelected += 1
+//            yellowTotal.text = createScore(number: yellowsSelected)
+//            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+//        }
+//    }
+//    @IBAction func yellow4Pushed(_ sender: Any) {
+//        if (yellow4.backgroundColor == UIColor.black) {
+//            yellow4.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
+//            yellowsSelected -= 1
+//            yellowTotal.text = createScore(number: yellowsSelected)
+//            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+//        } else {
+//            yellow4.backgroundColor = UIColor.black
+//            yellowsSelected += 1
+//            yellowTotal.text = createScore(number: yellowsSelected)
+//            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+//        }
+//    }
+//    @IBAction func yellow5Pushed(_ sender: Any) {
+//        if (yellow5.backgroundColor == UIColor.black) {
+//            yellow5.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
+//            yellowsSelected -= 1
+//            yellowTotal.text = createScore(number: yellowsSelected)
+//            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+//        } else {
+//            yellow5.backgroundColor = UIColor.black
+//            yellowsSelected += 1
+//            yellowTotal.text = createScore(number: yellowsSelected)
+//            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+//        }
+//    }
+//    @IBAction func yellow6Pushed(_ sender: Any) {
+//        if (yellow6.backgroundColor == UIColor.black) {
+//            yellow6.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
+//            yellowsSelected -= 1
+//            yellowTotal.text = createScore(number: yellowsSelected)
+//            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+//        } else {
+//            yellow6.backgroundColor = UIColor.black
+//            yellowsSelected += 1
+//            yellowTotal.text = createScore(number: yellowsSelected)
+//            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+//        }
+//    }
+//    @IBAction func yellow7Pushed(_ sender: Any) {
+//        if (yellow7.backgroundColor == UIColor.black) {
+//            yellow7.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
+//            yellowsSelected -= 1
+//            yellowTotal.text = createScore(number: yellowsSelected)
+//            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+//        } else {
+//            yellow7.backgroundColor = UIColor.black
+//            yellowsSelected += 1
+//            yellowTotal.text = createScore(number: yellowsSelected)
+//            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+//        }
+//    }
+//    @IBAction func yellow8Pushed(_ sender: Any) {
+//        if (yellow8.backgroundColor == UIColor.black) {
+//            yellow8.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
+//            yellowsSelected -= 1
+//            yellowTotal.text = createScore(number: yellowsSelected)
+//            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+//        } else {
+//            yellow8.backgroundColor = UIColor.black
+//            yellowsSelected += 1
+//            yellowTotal.text = createScore(number: yellowsSelected)
+//            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+//        }
+//    }
+//    @IBAction func yelow9Pushed(_ sender: Any) {
+//        if (yellow9.backgroundColor == UIColor.black) {
+//            yellow9.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
+//            yellowsSelected -= 1
+//            yellowTotal.text = createScore(number: yellowsSelected)
+//            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+//        } else {
+//            yellow9.backgroundColor = UIColor.black
+//            yellowsSelected += 1
+//            yellowTotal.text = createScore(number: yellowsSelected)
+//            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+//        }
+//    }
+//    @IBAction func yellow10Pushed(_ sender: Any) {
+//        if (yellow10.backgroundColor == UIColor.black) {
+//            yellow10.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
+//            yellowsSelected -= 1
+//            yellowTotal.text = createScore(number: yellowsSelected)
+//            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+//        } else {
+//            yellow10.backgroundColor = UIColor.black
+//            yellowsSelected += 1
+//            yellowTotal.text = createScore(number: yellowsSelected)
+//            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+//        }
+//    }
+//    @IBAction func yellow11Pushed(_ sender: Any) {
+//        if (yellow11.backgroundColor == UIColor.black) {
+//            yellow11.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
+//            yellowsSelected -= 1
+//            yellowTotal.text = createScore(number: yellowsSelected)
+//            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+//        } else {
+//            yellow11.backgroundColor = UIColor.black
+//            yellowsSelected += 1
+//            yellowTotal.text = createScore(number: yellowsSelected)
+//            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+//        }
+//    }
+//    @IBAction func yellow12Pushed(_ sender: Any) {
+//        if (yellow12.backgroundColor == UIColor.black) {
+//            yellow12.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
+//            yellowLock.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
+//            yellowsSelected -= 2
+//            yellowTotal.text = createScore(number: yellowsSelected)
+//            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+//        } else {
+//            yellow12.backgroundColor = UIColor.black
+//            yellowLock.backgroundColor = UIColor.black
+//            yellowsSelected += 2
+//            yellowTotal.text = createScore(number: yellowsSelected)
+//            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+//        }
+//        
+//    }
+//    
     
     
     
