@@ -176,6 +176,10 @@ class ViewController: UIViewController {
         return "0"
     }
     
+    func calculateTotal() {
+        finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)! - Int(penalityScore.text!)!)
+    }
+    
     func handleRed(tag : Int?, button : MyButton) {
         if (button.backgroundColor == UIColor.black) {
             button.backgroundColor = UIColor(red: 255/255, green: 102/255, blue: 102/255, alpha: 1)
@@ -185,7 +189,8 @@ class ViewController: UIViewController {
                 redsSelected -= 1
             }
             redTotal.text = createScore(number: redsSelected)
-            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+//            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+            calculateTotal()
         } else {
             button.backgroundColor = UIColor.black
             redsSelected += 1
@@ -194,7 +199,8 @@ class ViewController: UIViewController {
                 redsSelected += 1
             }
             redTotal.text = createScore(number: redsSelected)
-            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+//            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+            calculateTotal()
         }
     }
     
@@ -207,7 +213,8 @@ class ViewController: UIViewController {
                 yellowsSelected -= 1
             }
             yellowTotal.text = createScore(number: yellowsSelected)
-            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+//            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+            calculateTotal()
         } else {
             button.backgroundColor = UIColor.black
             yellowsSelected += 1
@@ -216,7 +223,8 @@ class ViewController: UIViewController {
                 yellowsSelected += 1
             }
             yellowTotal.text = createScore(number: yellowsSelected)
-            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+//            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+            calculateTotal()
         }
     }
     
@@ -229,7 +237,8 @@ class ViewController: UIViewController {
                 greensSelected -= 1
             }
             greenTotal.text = createScore(number: greensSelected)
-            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+//            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+            calculateTotal()
         } else {
             button.backgroundColor = UIColor.black
             greensSelected += 1
@@ -238,7 +247,8 @@ class ViewController: UIViewController {
                 greensSelected += 1
             }
             greenTotal.text = createScore(number: greensSelected)
-            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+//            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+            calculateTotal()
         }
     }
     
@@ -251,7 +261,8 @@ class ViewController: UIViewController {
                 bluesSelected -= 1
             }
             blueTotal.text = createScore(number: bluesSelected)
-            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+//            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+            calculateTotal()
         } else {
             button.backgroundColor = UIColor.black
             bluesSelected += 1
@@ -260,10 +271,11 @@ class ViewController: UIViewController {
                 bluesSelected += 1
             }
             blueTotal.text = createScore(number: bluesSelected)
-            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+//            finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
+            calculateTotal()
         }
     }
-
+    
     @IBAction func buttonPressed(_ sender: MyButton) {
         if (sender.tag % 10 == 1) {
             handleRed(tag: sender.tag, button: sender)
