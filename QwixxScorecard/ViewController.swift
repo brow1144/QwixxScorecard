@@ -205,6 +205,7 @@ class ViewController: UIViewController {
             renderRedBackground(button: button)
             redsSelected -= 1
             if (tag == 121) {
+                lockRed(boolean: true)
                 renderRedBackground(button: redLock)
                 redsSelected -= 1
             }
@@ -214,6 +215,7 @@ class ViewController: UIViewController {
             renderBlackBackground(button: button)
             redsSelected += 1
             if (tag == 121) {
+                lockRed(boolean: false)
                 renderBlackBackground(button: redLock)
                 redsSelected += 1
             }
@@ -227,6 +229,7 @@ class ViewController: UIViewController {
             renderYellowBackground(button: button)
             yellowsSelected -= 1
             if (tag == 122) {
+                lockYellow(boolean: true)
                 renderYellowBackground(button: yellowLock)
                 yellowsSelected -= 1
             }
@@ -236,6 +239,7 @@ class ViewController: UIViewController {
             renderBlackBackground(button: button)
             yellowsSelected += 1
             if (tag == 122) {
+                lockYellow(boolean: false)
                 renderBlackBackground(button: yellowLock)
                 yellowsSelected += 1
             }
@@ -249,6 +253,7 @@ class ViewController: UIViewController {
             renderGreenBackground(button: button)
             greensSelected -= 1
             if (tag == 23) {
+                lockGreen(boolean: true)
                 renderGreenBackground(button: greenLock)
                 greensSelected -= 1
             }
@@ -258,6 +263,7 @@ class ViewController: UIViewController {
             renderBlackBackground(button: button)
             greensSelected += 1
             if (tag == 23) {
+                lockGreen(boolean: false)
                 renderBlackBackground(button: greenLock)
                 greensSelected += 1
             }
@@ -271,6 +277,7 @@ class ViewController: UIViewController {
             renderBlueBackground(button: button)
             bluesSelected -= 1
             if (tag == 24) {
+                lockBlue(boolean: true)
                 renderBlueBackground(button: blueLock)
                 bluesSelected -= 1
             }
@@ -280,6 +287,7 @@ class ViewController: UIViewController {
             renderBlackBackground(button: button)
             bluesSelected += 1
             if (tag == 24) {
+                lockBlue(boolean: false)
                 renderBlackBackground(button: blueLock)
                 bluesSelected += 1
             }
