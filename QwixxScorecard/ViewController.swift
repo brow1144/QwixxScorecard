@@ -212,14 +212,18 @@ class ViewController: UIViewController {
             redTotal.text = createScore(number: redsSelected)
             calculateTotal()
         } else {
-            renderBlackBackground(button: button)
-            redsSelected += 1
             if (tag == 121) {
+                if(redsSelected < 5) {
+                    return
+                }
                 lockRed(boolean: false)
                 red12.isEnabled = true
                 renderBlackBackground(button: redLock)
                 redsSelected += 1
             }
+            
+            renderBlackBackground(button: button)
+            redsSelected += 1
             redTotal.text = createScore(number: redsSelected)
             calculateTotal()
         }
@@ -237,14 +241,17 @@ class ViewController: UIViewController {
             yellowTotal.text = createScore(number: yellowsSelected)
             calculateTotal()
         } else {
-            renderBlackBackground(button: button)
-            yellowsSelected += 1
             if (tag == 122) {
+                if (yellowsSelected < 5) {
+                    return
+                }
                 lockYellow(boolean: false)
                 yellow12.isEnabled = true
                 renderBlackBackground(button: yellowLock)
                 yellowsSelected += 1
             }
+            renderBlackBackground(button: button)
+            yellowsSelected += 1
             yellowTotal.text = createScore(number: yellowsSelected)
             calculateTotal()
         }
@@ -262,14 +269,17 @@ class ViewController: UIViewController {
             greenTotal.text = createScore(number: greensSelected)
             calculateTotal()
         } else {
-            renderBlackBackground(button: button)
-            greensSelected += 1
             if (tag == 23) {
+                if (greensSelected < 5) {
+                    return
+                }
                 lockGreen(boolean: false)
                 green2.isEnabled = true
                 renderBlackBackground(button: greenLock)
                 greensSelected += 1
             }
+            renderBlackBackground(button: button)
+            greensSelected += 1
             greenTotal.text = createScore(number: greensSelected)
             calculateTotal()
         }
@@ -287,14 +297,17 @@ class ViewController: UIViewController {
             blueTotal.text = createScore(number: bluesSelected)
             calculateTotal()
         } else {
-            renderBlackBackground(button: button)
-            bluesSelected += 1
             if (tag == 24) {
+                if (bluesSelected < 5) {
+                    return
+                }
                 lockBlue(boolean: false)
                 blue2.isEnabled = true
                 renderBlackBackground(button: blueLock)
                 bluesSelected += 1
             }
+            renderBlackBackground(button: button)
+            bluesSelected += 1
             blueTotal.text = createScore(number: bluesSelected)
             calculateTotal()
         }
