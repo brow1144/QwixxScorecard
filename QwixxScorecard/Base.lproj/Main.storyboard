@@ -1141,12 +1141,26 @@
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GUF-8D-6Cl"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYk-x3-8VW" customClass="MyButton" customModule="QwixxScorecard" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="264" width="105" height="21"/>
+                                        <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title=" New Game">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="handleNewGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qi4-ip-RzJ"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="zcq-Jc-6d8" firstAttribute="top" secondItem="Nsr-vS-irm" secondAttribute="top" id="08B-0B-Ncc"/>
                                     <constraint firstItem="NYZ-1x-7Y9" firstAttribute="baseline" secondItem="bSe-SK-qL2" secondAttribute="baseline" id="0Hq-cl-wkb"/>
                                     <constraint firstItem="KUZ-nm-XPk" firstAttribute="top" secondItem="nkf-gn-2ed" secondAttribute="top" id="0dY-Qh-Ynz"/>
                                     <constraint firstItem="JpN-UU-oUw" firstAttribute="top" secondItem="wVy-f4-3fd" secondAttribute="top" id="0em-Mk-WEY"/>
+                                    <constraint firstItem="PYk-x3-8VW" firstAttribute="trailing" secondItem="bTx-Mk-p0X" secondAttribute="trailing" id="0kc-MT-BOQ"/>
                                     <constraint firstItem="KH8-sQ-Csz" firstAttribute="top" secondItem="cPb-4U-Q2D" secondAttribute="bottom" constant="14" id="0oZ-5m-ZqU"/>
                                     <constraint firstItem="Jwk-Fl-VRt" firstAttribute="top" secondItem="XEa-Hq-ZNk" secondAttribute="bottom" constant="16" id="0rG-rv-zAr"/>
                                     <constraint firstItem="KbT-Jx-h6w" firstAttribute="baseline" secondItem="4Mp-6U-lOO" secondAttribute="firstBaseline" id="19q-KO-y6t"/>
@@ -1241,6 +1255,7 @@
                                     <constraint firstItem="z3G-Gh-Ngq" firstAttribute="baseline" secondItem="u8P-an-g4h" secondAttribute="firstBaseline" id="IT6-dN-1it"/>
                                     <constraint firstItem="Brq-gP-IUQ" firstAttribute="leading" secondItem="kVl-EO-ZA0" secondAttribute="leading" id="Ict-DY-WVD"/>
                                     <constraint firstItem="KH8-sQ-Csz" firstAttribute="baseline" secondItem="6k0-pd-0be" secondAttribute="firstBaseline" id="J2U-Cb-vNw"/>
+                                    <constraint firstItem="PYk-x3-8VW" firstAttribute="baseline" secondItem="lA8-z2-XBr" secondAttribute="baseline" id="J3E-Q8-x5g"/>
                                     <constraint firstItem="pGy-l5-Ps5" firstAttribute="leading" secondItem="QOs-3f-moe" secondAttribute="trailing" constant="2" id="J6G-Y8-sg0"/>
                                     <constraint firstItem="wVy-f4-3fd" firstAttribute="leading" secondItem="JpN-UU-oUw" secondAttribute="trailing" constant="2" id="JEF-xN-TbC"/>
                                     <constraint firstItem="zDP-PX-s2M" firstAttribute="leading" secondItem="KUZ-nm-XPk" secondAttribute="trailing" constant="8" symbolic="YES" id="JJz-wm-eiZ"/>
@@ -1337,6 +1352,7 @@
                                     <constraint firstItem="Jhe-LA-ruv" firstAttribute="baseline" secondItem="cus-4T-eRV" secondAttribute="baseline" id="b8p-bB-4Fa"/>
                                     <constraint firstItem="cPb-4U-Q2D" firstAttribute="top" secondItem="lDl-pZ-Qch" secondAttribute="bottom" constant="2" id="bVK-BO-g2c"/>
                                     <constraint firstItem="Gij-yx-E2H" firstAttribute="trailing" secondItem="bSe-SK-qL2" secondAttribute="trailing" id="bVs-Dt-G9n"/>
+                                    <constraint firstItem="PYk-x3-8VW" firstAttribute="firstBaseline" secondItem="lA8-z2-XBr" secondAttribute="baseline" id="beq-b2-7Hn"/>
                                     <constraint firstItem="Jwk-Fl-VRt" firstAttribute="centerY" secondItem="kVl-EO-ZA0" secondAttribute="centerY" id="beu-8i-vUK"/>
                                     <constraint firstItem="KbT-Jx-h6w" firstAttribute="top" secondItem="4Mp-6U-lOO" secondAttribute="top" id="c1Q-jC-O6e"/>
                                     <constraint firstItem="1Oy-mg-w51" firstAttribute="firstBaseline" secondItem="7gE-Ug-BQQ" secondAttribute="firstBaseline" id="c87-2A-esW"/>
@@ -1419,6 +1435,7 @@
                                     <constraint firstItem="lDl-pZ-Qch" firstAttribute="leading" secondItem="LYN-xk-y8M" secondAttribute="leading" constant="30" id="qck-h5-RWF"/>
                                     <constraint firstItem="pGy-l5-Ps5" firstAttribute="top" secondItem="EDJ-yH-fvA" secondAttribute="top" id="qdR-25-Srg"/>
                                     <constraint firstItem="z3G-Gh-Ngq" firstAttribute="top" secondItem="UyP-hD-L8o" secondAttribute="bottom" constant="8" symbolic="YES" id="qdx-fE-57y"/>
+                                    <constraint firstItem="PYk-x3-8VW" firstAttribute="leading" secondItem="xbl-80-HDe" secondAttribute="leading" id="qxu-mC-DgI"/>
                                     <constraint firstItem="5Th-hK-AEB" firstAttribute="leading" secondItem="8bs-JK-eJe" secondAttribute="trailing" constant="12" id="rIN-SX-OV0"/>
                                     <constraint firstItem="mQj-JT-rxH" firstAttribute="trailing" secondItem="KbT-Jx-h6w" secondAttribute="trailing" id="rWR-jP-dWA"/>
                                     <constraint firstItem="mtU-l8-ePU" firstAttribute="baseline" secondItem="JpN-UU-oUw" secondAttribute="baseline" id="rsM-m6-waI"/>
@@ -1440,6 +1457,7 @@
                                     <constraint firstItem="MSU-pO-kV3" firstAttribute="baseline" secondItem="AHl-x3-OM1" secondAttribute="firstBaseline" id="vYc-Ur-i5K"/>
                                     <constraint firstItem="4Mp-6U-lOO" firstAttribute="baseline" secondItem="ZDf-oG-31U" secondAttribute="baseline" id="vZI-tT-g3Y"/>
                                     <constraint firstItem="X4C-Jl-5qH" firstAttribute="leading" secondItem="nkf-gn-2ed" secondAttribute="leading" id="vbv-81-dZn"/>
+                                    <constraint firstItem="PYk-x3-8VW" firstAttribute="top" secondItem="lA8-z2-XBr" secondAttribute="top" id="vj2-9N-kc6"/>
                                     <constraint firstItem="Lu2-SJ-R5j" firstAttribute="leading" secondItem="wVy-f4-3fd" secondAttribute="trailing" constant="2" id="w26-yy-ncQ"/>
                                     <constraint firstItem="Jwk-Fl-VRt" firstAttribute="top" secondItem="Lhh-Wy-Ng0" secondAttribute="bottom" constant="8" symbolic="YES" id="wWC-3y-DmW"/>
                                     <constraint firstItem="NYZ-1x-7Y9" firstAttribute="top" secondItem="bSe-SK-qL2" secondAttribute="top" id="wWe-4D-aco"/>
@@ -1534,7 +1552,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="180" y="98"/>
+            <point key="canvasLocation" x="179.46026986506749" y="96.799999999999997"/>
         </scene>
     </scenes>
 </document>

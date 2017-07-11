@@ -317,6 +317,102 @@ class ViewController: UIViewController {
         }
     }
     
+    func resetRedRow() {
+        renderRedBackground(button: red2)
+        renderRedBackground(button: red3)
+        renderRedBackground(button: red4)
+        renderRedBackground(button: red5)
+        renderRedBackground(button: red6)
+        renderRedBackground(button: red7)
+        renderRedBackground(button: red8)
+        renderRedBackground(button: red9)
+        renderRedBackground(button: red10)
+        renderRedBackground(button: red11)
+        renderRedBackground(button: red12)
+        renderRedBackground(button: redLock)
+        redsSelected = 0
+        lockRed(boolean: true)
+        redTotal.text = "0"
+    }
+    
+    func resetYellowRow() {
+        renderYellowBackground(button: yellow2)
+        renderYellowBackground(button: yellow3)
+        renderYellowBackground(button: yellow4)
+        renderYellowBackground(button: yellow5)
+        renderYellowBackground(button: yellow6)
+        renderYellowBackground(button: yellow7)
+        renderYellowBackground(button: yellow8)
+        renderYellowBackground(button: yellow9)
+        renderYellowBackground(button: yellow10)
+        renderYellowBackground(button: yellow11)
+        renderYellowBackground(button: yellow12)
+        renderYellowBackground(button: yellowLock)
+        yellowsSelected = 0
+        lockYellow(boolean: true)
+        yellowTotal.text = "0"
+    }
+    
+    func resetGreenRow() {
+        renderGreenBackground(button: green2)
+        renderGreenBackground(button: green3)
+        renderGreenBackground(button: green4)
+        renderGreenBackground(button: green5)
+        renderGreenBackground(button: green6)
+        renderGreenBackground(button: green7)
+        renderGreenBackground(button: green8)
+        renderGreenBackground(button: green9)
+        renderGreenBackground(button: green10)
+        renderGreenBackground(button: green11)
+        renderGreenBackground(button: green12)
+        renderGreenBackground(button: greenLock)
+        greensSelected = 0
+        lockGreen(boolean: true)
+        greenTotal.text = "0"
+    }
+    
+    func resetBlueRow() {
+        renderBlueBackground(button: blue2)
+        renderBlueBackground(button: blue3)
+        renderBlueBackground(button: blue4)
+        renderBlueBackground(button: blue5)
+        renderBlueBackground(button: blue6)
+        renderBlueBackground(button: blue7)
+        renderBlueBackground(button: blue8)
+        renderBlueBackground(button: blue9)
+        renderBlueBackground(button: blue10)
+        renderBlueBackground(button: blue11)
+        renderBlueBackground(button: blue12)
+        renderBlueBackground(button: blueLock)
+        bluesSelected = 0
+        lockBlue(boolean: true)
+        blueTotal.text = "0"
+    }
+    
+    func resetPenalityRow() {
+        penality1.setTitle("",for: .normal)
+        penality1.tag = 0
+        penality2.setTitle("",for: .normal)
+        penality2.tag = 0
+        penality3.setTitle("",for: .normal)
+        penality3.tag = 0
+        penality4.setTitle("",for: .normal)
+        penality4.tag = 0
+        totalPenality = 0
+        penalityScore.text = "0"
+    
+        finalScore.text = "0"
+    }
+    
+    @IBAction func handleNewGame(_ sender: MyButton) {
+        resetRedRow()
+        resetYellowRow()
+        resetGreenRow()
+        resetBlueRow()
+        
+        resetPenalityRow()
+    }
+    
     func lockRed(boolean: Bool) {
         red2.isEnabled = boolean
         red3.isEnabled = boolean
