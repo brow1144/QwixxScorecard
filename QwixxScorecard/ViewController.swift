@@ -180,21 +180,41 @@ class ViewController: UIViewController {
         finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)! - Int(penalityScore.text!)!)
     }
     
+    func renderBlackBackground(button: MyButton) {
+        button.backgroundColor = UIColor.black
+    }
+    
+    func renderRedBackground(button: MyButton) {
+        button.backgroundColor = UIColor(red: 255/255, green: 102/255, blue: 102/255, alpha: 1)
+    }
+    
+    func renderYellowBackground(button: MyButton) {
+        button.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
+    }
+    
+    func renderGreenBackground(button: MyButton) {
+        button.backgroundColor = UIColor(red: 102/255, green: 204/255, blue: 153/255, alpha: 1)
+    }
+    
+    func renderBlueBackground(button: MyButton) {
+        button.backgroundColor = UIColor(red: 102/255, green: 102/255, blue: 255/255, alpha: 1)
+    }
+    
     func handleRed(tag : Int?, button : MyButton) {
         if (button.backgroundColor == UIColor.black) {
-            button.backgroundColor = UIColor(red: 255/255, green: 102/255, blue: 102/255, alpha: 1)
+            renderRedBackground(button: button)
             redsSelected -= 1
             if (tag == 121) {
-                redLock.backgroundColor = UIColor(red: 255/255, green: 102/255, blue: 102/255, alpha: 1)
+                renderRedBackground(button: redLock)
                 redsSelected -= 1
             }
             redTotal.text = createScore(number: redsSelected)
             calculateTotal()
         } else {
-            button.backgroundColor = UIColor.black
+            renderBlackBackground(button: button)
             redsSelected += 1
             if (tag == 121) {
-                redLock.backgroundColor = UIColor.black
+                renderBlackBackground(button: redLock)
                 redsSelected += 1
             }
             redTotal.text = createScore(number: redsSelected)
@@ -204,19 +224,19 @@ class ViewController: UIViewController {
     
     func handleYellow(tag : Int?, button : MyButton) {
         if (button.backgroundColor == UIColor.black) {
-            button.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
+            renderYellowBackground(button: button)
             yellowsSelected -= 1
             if (tag == 122) {
-                yellowLock.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
+                renderYellowBackground(button: yellowLock)
                 yellowsSelected -= 1
             }
             yellowTotal.text = createScore(number: yellowsSelected)
             calculateTotal()
         } else {
-            button.backgroundColor = UIColor.black
+            renderBlackBackground(button: button)
             yellowsSelected += 1
             if (tag == 122) {
-                yellowLock.backgroundColor = UIColor.black
+                renderBlackBackground(button: yellowLock)
                 yellowsSelected += 1
             }
             yellowTotal.text = createScore(number: yellowsSelected)
@@ -226,19 +246,19 @@ class ViewController: UIViewController {
     
     func handleGreen(tag: Int?, button: MyButton) {
         if (button.backgroundColor == UIColor.black) {
-            button.backgroundColor = UIColor(red: 102/255, green: 204/255, blue: 153/255, alpha: 1)
+            renderGreenBackground(button: button)
             greensSelected -= 1
             if (tag == 23) {
-                greenLock.backgroundColor = UIColor(red: 102/255, green: 204/255, blue: 153/255, alpha: 1)
+                renderGreenBackground(button: greenLock)
                 greensSelected -= 1
             }
             greenTotal.text = createScore(number: greensSelected)
             calculateTotal()
         } else {
-            button.backgroundColor = UIColor.black
+            renderBlackBackground(button: button)
             greensSelected += 1
             if (tag == 23) {
-                greenLock.backgroundColor = UIColor.black
+                renderBlackBackground(button: greenLock)
                 greensSelected += 1
             }
             greenTotal.text = createScore(number: greensSelected)
@@ -248,19 +268,19 @@ class ViewController: UIViewController {
     
     func handleBlue(tag: Int?, button: MyButton) {
         if (button.backgroundColor == UIColor.black) {
-            button.backgroundColor = UIColor(red: 102/255, green: 102/255, blue: 255/255, alpha: 1)
+            renderBlueBackground(button: button)
             bluesSelected -= 1
             if (tag == 24) {
-                blueLock.backgroundColor = UIColor(red: 102/255, green: 102/255, blue: 255/255, alpha: 1)
+                renderBlueBackground(button: blueLock)
                 bluesSelected -= 1
             }
             blueTotal.text = createScore(number: bluesSelected)
             calculateTotal()
         } else {
-            button.backgroundColor = UIColor.black
+            renderBlackBackground(button: button)
             bluesSelected += 1
             if (tag == 24) {
-                blueLock.backgroundColor = UIColor.black
+                renderBlackBackground(button: blueLock)
                 bluesSelected += 1
             }
             blueTotal.text = createScore(number: bluesSelected)
@@ -357,35 +377,34 @@ class ViewController: UIViewController {
         if (sender.tag % 10 == 1) {
             if (red2.isEnabled) {
                 lockRed(boolean: false)
-                redLock.backgroundColor = UIColor.black
+                renderBlackBackground(button: redLock)
             } else {
                 lockRed(boolean: true)
-                redLock.backgroundColor = UIColor(red: 255/255, green: 102/255, blue: 102/255, alpha: 1)
+                renderRedBackground(button: redLock)
             }
         } else if (sender.tag % 10 == 2) {
             if (yellow2.isEnabled) {
                 lockYellow(boolean: false)
-                yellowLock.backgroundColor = UIColor.black
+                renderBlackBackground(button: yellowLock)
             } else {
                 lockYellow(boolean: true)
-                yellowLock.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 102/255, alpha: 1)
+                renderYellowBackground(button: yellowLock)
             }
         } else if (sender.tag % 10 == 3) {
             if (green2.isEnabled) {
                 lockGreen(boolean: false)
-                greenLock.backgroundColor = UIColor.black
-                
+                renderBlackBackground(button: greenLock)
             } else {
                 lockGreen(boolean: true)
-                greenLock.backgroundColor = UIColor(red: 102/255, green: 204/255, blue: 153/255, alpha: 1)
+                renderGreenBackground(button: greenLock)
             }
         } else if (sender.tag % 10 == 4) {
             if (blue2.isEnabled) {
                 lockBlue(boolean: false)
-                blueLock.backgroundColor = UIColor.black
+                renderBlackBackground(button: blueLock)
             } else {
                 lockBlue(boolean: true)
-                blueLock.backgroundColor = UIColor(red: 102/255, green: 102/255, blue: 255/255, alpha: 1)
+                renderBlueBackground(button: blueLock)
             }
         }
     }
