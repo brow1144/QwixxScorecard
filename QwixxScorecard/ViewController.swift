@@ -216,6 +216,7 @@ class ViewController: UIViewController {
             redsSelected += 1
             if (tag == 121) {
                 lockRed(boolean: false)
+                red12.isEnabled = true
                 renderBlackBackground(button: redLock)
                 redsSelected += 1
             }
@@ -240,6 +241,7 @@ class ViewController: UIViewController {
             yellowsSelected += 1
             if (tag == 122) {
                 lockYellow(boolean: false)
+                yellow12.isEnabled = true
                 renderBlackBackground(button: yellowLock)
                 yellowsSelected += 1
             }
@@ -264,6 +266,7 @@ class ViewController: UIViewController {
             greensSelected += 1
             if (tag == 23) {
                 lockGreen(boolean: false)
+                green2.isEnabled = true
                 renderBlackBackground(button: greenLock)
                 greensSelected += 1
             }
@@ -288,6 +291,7 @@ class ViewController: UIViewController {
             bluesSelected += 1
             if (tag == 24) {
                 lockBlue(boolean: false)
+                blue2.isEnabled = true
                 renderBlackBackground(button: blueLock)
                 bluesSelected += 1
             }
