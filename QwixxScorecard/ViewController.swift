@@ -263,7 +263,7 @@ class ViewController: UIViewController {
             finalScore.text = String(Int(redTotal.text!)! + Int(yellowTotal.text!)! + Int(greenTotal.text!)! + Int(blueTotal.text!)!)
         }
     }
-    
+
     @IBAction func buttonPressed(_ sender: MyButton) {
         if (sender.tag % 10 == 1) {
             handleRed(tag: sender.tag, button: sender)
