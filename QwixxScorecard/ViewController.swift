@@ -211,6 +211,11 @@ class ViewController: UIViewController {
             }
             redTotal.text = createScore(number: redsSelected)
             calculateTotal()
+            if (redsSelected > 4) {
+                red12.alpha = 1
+            } else {
+                red12.alpha = 0.5
+            }
         } else {
             if (tag == 121) {
                 if(redsSelected < 5) {
@@ -221,11 +226,15 @@ class ViewController: UIViewController {
                 renderBlackBackground(button: redLock)
                 redsSelected += 1
             }
-            
             renderBlackBackground(button: button)
             redsSelected += 1
             redTotal.text = createScore(number: redsSelected)
             calculateTotal()
+            if (redsSelected > 4) {
+                red12.alpha = 1
+            } else {
+                red12.alpha = 0.5
+            }
         }
     }
     
@@ -240,6 +249,11 @@ class ViewController: UIViewController {
             }
             yellowTotal.text = createScore(number: yellowsSelected)
             calculateTotal()
+            if (yellowsSelected > 4) {
+                yellow12.alpha = 1
+            } else {
+                yellow12.alpha = 0.5
+            }
         } else {
             if (tag == 122) {
                 if (yellowsSelected < 5) {
@@ -254,6 +268,11 @@ class ViewController: UIViewController {
             yellowsSelected += 1
             yellowTotal.text = createScore(number: yellowsSelected)
             calculateTotal()
+            if (yellowsSelected > 4) {
+                yellow12.alpha = 1
+            } else {
+                yellow12.alpha = 0.5
+            }
         }
     }
     
@@ -268,6 +287,11 @@ class ViewController: UIViewController {
             }
             greenTotal.text = createScore(number: greensSelected)
             calculateTotal()
+            if (greensSelected > 4) {
+                green2.alpha = 1
+            } else {
+                green2.alpha = 0.5
+            }
         } else {
             if (tag == 23) {
                 if (greensSelected < 5) {
@@ -282,6 +306,11 @@ class ViewController: UIViewController {
             greensSelected += 1
             greenTotal.text = createScore(number: greensSelected)
             calculateTotal()
+            if (greensSelected > 4) {
+                green2.alpha = 1
+            } else {
+                green2.alpha = 0.5
+            }
         }
     }
     
@@ -296,6 +325,11 @@ class ViewController: UIViewController {
             }
             blueTotal.text = createScore(number: bluesSelected)
             calculateTotal()
+            if (bluesSelected > 4) {
+                blue2.alpha = 1
+            } else {
+                blue2.alpha = 0.5
+            }
         } else {
             if (tag == 24) {
                 if (bluesSelected < 5) {
@@ -310,6 +344,11 @@ class ViewController: UIViewController {
             bluesSelected += 1
             blueTotal.text = createScore(number: bluesSelected)
             calculateTotal()
+            if (bluesSelected > 4) {
+                blue2.alpha = 1
+            } else {
+                blue2.alpha = 0.5
+            }
         }
     }
     
@@ -358,6 +397,7 @@ class ViewController: UIViewController {
         redsSelected = 0
         lockRed(boolean: true)
         redTotal.text = "0"
+        red12.alpha = 0.5
     }
     
     func resetYellowRow() {
@@ -376,6 +416,7 @@ class ViewController: UIViewController {
         yellowsSelected = 0
         lockYellow(boolean: true)
         yellowTotal.text = "0"
+        yellow12.alpha = 0.5
     }
     
     func resetGreenRow() {
@@ -394,6 +435,7 @@ class ViewController: UIViewController {
         greensSelected = 0
         lockGreen(boolean: true)
         greenTotal.text = "0"
+        green2.alpha = 0.5
     }
     
     func resetBlueRow() {
@@ -412,6 +454,7 @@ class ViewController: UIViewController {
         bluesSelected = 0
         lockBlue(boolean: true)
         blueTotal.text = "0"
+        blue2.alpha = 0.5
     }
     
     func resetPenalityRow() {
