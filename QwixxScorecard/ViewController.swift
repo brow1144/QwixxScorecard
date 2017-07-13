@@ -515,7 +515,6 @@ class ViewController: UIViewController {
         penality4.tag = 0
         totalPenality = 0
         penalityScore.text = "0"
-    
         finalScore.text = "0"
     }
     
@@ -524,7 +523,6 @@ class ViewController: UIViewController {
         resetYellowRow()
         resetGreenRow()
         resetBlueRow()
-        
         resetPenalityRow()
     }
     
@@ -584,39 +582,55 @@ class ViewController: UIViewController {
         blue12.isEnabled = boolean
     }
     
+    fileprivate func handleLockRed() {
+        if (red2.isEnabled) {
+            lockRed(boolean: false)
+            renderBlackBackground(button: redLock)
+        } else {
+            lockRed(boolean: true)
+            renderRedBackground(button: redLock)
+        }
+    }
+    
+    fileprivate func handleLockYellow() {
+        if (yellow2.isEnabled) {
+            lockYellow(boolean: false)
+            renderBlackBackground(button: yellowLock)
+        } else {
+            lockYellow(boolean: true)
+            renderYellowBackground(button: yellowLock)
+        }
+    }
+    
+    fileprivate func handleLockGreen() {
+        if (green2.isEnabled) {
+            lockGreen(boolean: false)
+            renderBlackBackground(button: greenLock)
+        } else {
+            lockGreen(boolean: true)
+            renderGreenBackground(button: greenLock)
+        }
+    }
+    
+    fileprivate func handleLockBlue() {
+        if (blue2.isEnabled) {
+            lockBlue(boolean: false)
+            renderBlackBackground(button: blueLock)
+        } else {
+            lockBlue(boolean: true)
+            renderBlueBackground(button: blueLock)
+        }
+    }
+    
     @IBAction func handleLock(_ sender: MyButton) {
         if (sender.tag % 10 == 1) {
-            if (red2.isEnabled) {
-                lockRed(boolean: false)
-                renderBlackBackground(button: redLock)
-            } else {
-                lockRed(boolean: true)
-                renderRedBackground(button: redLock)
-            }
+            handleLockRed()
         } else if (sender.tag % 10 == 2) {
-            if (yellow2.isEnabled) {
-                lockYellow(boolean: false)
-                renderBlackBackground(button: yellowLock)
-            } else {
-                lockYellow(boolean: true)
-                renderYellowBackground(button: yellowLock)
-            }
+            handleLockYellow()
         } else if (sender.tag % 10 == 3) {
-            if (green2.isEnabled) {
-                lockGreen(boolean: false)
-                renderBlackBackground(button: greenLock)
-            } else {
-                lockGreen(boolean: true)
-                renderGreenBackground(button: greenLock)
-            }
+            handleLockGreen()
         } else if (sender.tag % 10 == 4) {
-            if (blue2.isEnabled) {
-                lockBlue(boolean: false)
-                renderBlackBackground(button: blueLock)
-            } else {
-                lockBlue(boolean: true)
-                renderBlueBackground(button: blueLock)
-            }
+            handleLockBlue()
         }
     }
 }
