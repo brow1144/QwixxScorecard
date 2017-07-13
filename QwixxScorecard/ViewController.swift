@@ -82,17 +82,9 @@ class ViewController: UIViewController {
     var totalPenality = 0
     @IBOutlet var penalityScore: UILabel!
     
-    
     @IBOutlet var finalScore: UILabel!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        penality1.tag = 0
-        penality2.tag = 0
-        penality3.tag = 0
-        penality4.tag = 0
-        
+    fileprivate func setRedTags() {
         red2.tag = 21
         red3.tag = 31
         red4.tag = 41
@@ -105,7 +97,9 @@ class ViewController: UIViewController {
         red11.tag = 111
         red12.tag = 121
         redLock.tag = 991
-        
+    }
+    
+    fileprivate func setYellowTags() {
         yellow2.tag = 22
         yellow3.tag = 32
         yellow4.tag = 42
@@ -118,7 +112,9 @@ class ViewController: UIViewController {
         yellow11.tag = 112
         yellow12.tag = 122
         yellowLock.tag = 992
-
+    }
+    
+    fileprivate func setGreenTags() {
         green2.tag = 23
         green3.tag = 33
         green4.tag = 43
@@ -131,7 +127,9 @@ class ViewController: UIViewController {
         green11.tag = 113
         green12.tag = 123
         greenLock.tag = 993
-        
+    }
+    
+    fileprivate func setBlueTags() {
         blue2.tag = 24
         blue3.tag = 34
         blue4.tag = 44
@@ -144,6 +142,23 @@ class ViewController: UIViewController {
         blue11.tag = 114
         blue12.tag = 124
         blueLock.tag = 994
+    }
+    
+    fileprivate func setPenalityTags() {
+        penality1.tag = 0
+        penality2.tag = 0
+        penality3.tag = 0
+        penality4.tag = 0
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        setRedTags()
+        setYellowTags()
+        setGreenTags()
+        setBlueTags()
+        setPenalityTags()
     }
     
     func createScore(number: Int?) -> String {
@@ -200,155 +215,187 @@ class ViewController: UIViewController {
         button.backgroundColor = UIColor(red: 102/255, green: 102/255, blue: 255/255, alpha: 1)
     }
     
-    func handleRed(tag : Int?, button : MyButton) {
-        if (button.backgroundColor == UIColor.black) {
-            renderRedBackground(button: button)
+    fileprivate func handleUnClickRed(tag: Int?, button: MyButton) {
+        renderRedBackground(button: button)
+        redsSelected -= 1
+        if (tag == 121) {
+            lockRed(boolean: true)
+            renderRedBackground(button: redLock)
             redsSelected -= 1
-            if (tag == 121) {
-                lockRed(boolean: true)
-                renderRedBackground(button: redLock)
-                redsSelected -= 1
-            }
-            redTotal.text = createScore(number: redsSelected)
-            calculateTotal()
-            if (redsSelected > 4) {
-                red12.alpha = 1
-            } else {
-                red12.alpha = 0.5
-            }
+        }
+        redTotal.text = createScore(number: redsSelected)
+        calculateTotal()
+        if (redsSelected > 4) {
+            red12.alpha = 1
         } else {
-            if (tag == 121) {
-                if(redsSelected < 5) {
-                    return
-                }
-                lockRed(boolean: false)
-                red12.isEnabled = true
-                renderBlackBackground(button: redLock)
-                redsSelected += 1
+            red12.alpha = 0.5
+        }
+    }
+    
+    fileprivate func handleClickRed(_ tag: Int?, _ button: MyButton) {
+        if (tag == 121) {
+            if(redsSelected < 5) {
+                return
             }
-            renderBlackBackground(button: button)
+            lockRed(boolean: false)
+            red12.isEnabled = true
+            renderBlackBackground(button: redLock)
             redsSelected += 1
-            redTotal.text = createScore(number: redsSelected)
-            calculateTotal()
-            if (redsSelected > 4) {
-                red12.alpha = 1
-            } else {
-                red12.alpha = 0.5
+        }
+        renderBlackBackground(button: button)
+        redsSelected += 1
+        redTotal.text = createScore(number: redsSelected)
+        calculateTotal()
+        if (redsSelected > 4) {
+            red12.alpha = 1
+        } else {
+            red12.alpha = 0.5
+        }
+    }
+    
+    func handleRed(tag: Int?, button: MyButton) {
+        if (button.backgroundColor == UIColor.black) {
+            handleUnClickRed(tag: tag, button: button)
+        } else {
+            handleClickRed(tag, button)
+        }
+    }
+    
+    fileprivate func handleUnClickYellow(_ button: MyButton, _ tag: Int?) {
+        renderYellowBackground(button: button)
+        yellowsSelected -= 1
+        if (tag == 122) {
+            lockYellow(boolean: true)
+            renderYellowBackground(button: yellowLock)
+            yellowsSelected -= 1
+        }
+        yellowTotal.text = createScore(number: yellowsSelected)
+        calculateTotal()
+        if (yellowsSelected > 4) {
+            yellow12.alpha = 1
+        } else {
+            yellow12.alpha = 0.5
+        }
+    }
+    
+    fileprivate func handleClickYellow(_ tag: Int?, _ button: MyButton) {
+        if (tag == 122) {
+            if (yellowsSelected < 5) {
+                return
             }
+            lockYellow(boolean: false)
+            yellow12.isEnabled = true
+            renderBlackBackground(button: yellowLock)
+            yellowsSelected += 1
+        }
+        renderBlackBackground(button: button)
+        yellowsSelected += 1
+        yellowTotal.text = createScore(number: yellowsSelected)
+        calculateTotal()
+        if (yellowsSelected > 4) {
+            yellow12.alpha = 1
+        } else {
+            yellow12.alpha = 0.5
         }
     }
     
     func handleYellow(tag : Int?, button : MyButton) {
         if (button.backgroundColor == UIColor.black) {
-            renderYellowBackground(button: button)
-            yellowsSelected -= 1
-            if (tag == 122) {
-                lockYellow(boolean: true)
-                renderYellowBackground(button: yellowLock)
-                yellowsSelected -= 1
-            }
-            yellowTotal.text = createScore(number: yellowsSelected)
-            calculateTotal()
-            if (yellowsSelected > 4) {
-                yellow12.alpha = 1
-            } else {
-                yellow12.alpha = 0.5
-            }
+            handleUnClickYellow(button, tag)
         } else {
-            if (tag == 122) {
-                if (yellowsSelected < 5) {
-                    return
-                }
-                lockYellow(boolean: false)
-                yellow12.isEnabled = true
-                renderBlackBackground(button: yellowLock)
-                yellowsSelected += 1
+            handleClickYellow(tag, button)
+        }
+    }
+    
+    fileprivate func handleUnClickGreen(_ button: MyButton, _ tag: Int?) {
+        renderGreenBackground(button: button)
+        greensSelected -= 1
+        if (tag == 23) {
+            lockGreen(boolean: true)
+            renderGreenBackground(button: greenLock)
+            greensSelected -= 1
+        }
+        greenTotal.text = createScore(number: greensSelected)
+        calculateTotal()
+        if (greensSelected > 4) {
+            green2.alpha = 1
+        } else {
+            green2.alpha = 0.5
+        }
+    }
+    
+    fileprivate func handleClickGreen(_ tag: Int?, _ button: MyButton) {
+        if (tag == 23) {
+            if (greensSelected < 5) {
+                return
             }
-            renderBlackBackground(button: button)
-            yellowsSelected += 1
-            yellowTotal.text = createScore(number: yellowsSelected)
-            calculateTotal()
-            if (yellowsSelected > 4) {
-                yellow12.alpha = 1
-            } else {
-                yellow12.alpha = 0.5
-            }
+            lockGreen(boolean: false)
+            green2.isEnabled = true
+            renderBlackBackground(button: greenLock)
+            greensSelected += 1
+        }
+        renderBlackBackground(button: button)
+        greensSelected += 1
+        greenTotal.text = createScore(number: greensSelected)
+        calculateTotal()
+        if (greensSelected > 4) {
+            green2.alpha = 1
+        } else {
+            green2.alpha = 0.5
         }
     }
     
     func handleGreen(tag: Int?, button: MyButton) {
         if (button.backgroundColor == UIColor.black) {
-            renderGreenBackground(button: button)
-            greensSelected -= 1
-            if (tag == 23) {
-                lockGreen(boolean: true)
-                renderGreenBackground(button: greenLock)
-                greensSelected -= 1
-            }
-            greenTotal.text = createScore(number: greensSelected)
-            calculateTotal()
-            if (greensSelected > 4) {
-                green2.alpha = 1
-            } else {
-                green2.alpha = 0.5
-            }
+            handleUnClickGreen(button, tag)
         } else {
-            if (tag == 23) {
-                if (greensSelected < 5) {
-                    return
-                }
-                lockGreen(boolean: false)
-                green2.isEnabled = true
-                renderBlackBackground(button: greenLock)
-                greensSelected += 1
+            handleClickGreen(tag, button)
+        }
+    }
+    
+    fileprivate func handleUnClickBlue(_ button: MyButton, _ tag: Int?) {
+        renderBlueBackground(button: button)
+        bluesSelected -= 1
+        if (tag == 24) {
+            lockBlue(boolean: true)
+            renderBlueBackground(button: blueLock)
+            bluesSelected -= 1
+        }
+        blueTotal.text = createScore(number: bluesSelected)
+        calculateTotal()
+        if (bluesSelected > 4) {
+            blue2.alpha = 1
+        } else {
+            blue2.alpha = 0.5
+        }
+    }
+    
+    fileprivate func handleClickBlue(_ tag: Int?, _ button: MyButton) {
+        if (tag == 24) {
+            if (bluesSelected < 5) {
+                return
             }
-            renderBlackBackground(button: button)
-            greensSelected += 1
-            greenTotal.text = createScore(number: greensSelected)
-            calculateTotal()
-            if (greensSelected > 4) {
-                green2.alpha = 1
-            } else {
-                green2.alpha = 0.5
-            }
+            lockBlue(boolean: false)
+            blue2.isEnabled = true
+            renderBlackBackground(button: blueLock)
+            bluesSelected += 1
+        }
+        renderBlackBackground(button: button)
+        bluesSelected += 1
+        blueTotal.text = createScore(number: bluesSelected)
+        calculateTotal()
+        if (bluesSelected > 4) {
+            blue2.alpha = 1
+        } else {
+            blue2.alpha = 0.5
         }
     }
     
     func handleBlue(tag: Int?, button: MyButton) {
         if (button.backgroundColor == UIColor.black) {
-            renderBlueBackground(button: button)
-            bluesSelected -= 1
-            if (tag == 24) {
-                lockBlue(boolean: true)
-                renderBlueBackground(button: blueLock)
-                bluesSelected -= 1
-            }
-            blueTotal.text = createScore(number: bluesSelected)
-            calculateTotal()
-            if (bluesSelected > 4) {
-                blue2.alpha = 1
-            } else {
-                blue2.alpha = 0.5
-            }
+            handleUnClickBlue(button, tag)
         } else {
-            if (tag == 24) {
-                if (bluesSelected < 5) {
-                    return
-                }
-                lockBlue(boolean: false)
-                blue2.isEnabled = true
-                renderBlackBackground(button: blueLock)
-                bluesSelected += 1
-            }
-            renderBlackBackground(button: button)
-            bluesSelected += 1
-            blueTotal.text = createScore(number: bluesSelected)
-            calculateTotal()
-            if (bluesSelected > 4) {
-                blue2.alpha = 1
-            } else {
-                blue2.alpha = 0.5
-            }
+            handleClickBlue(tag, button)
         }
     }
     
